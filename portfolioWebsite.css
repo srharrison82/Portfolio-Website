@@ -18,9 +18,21 @@ body {
     /* CSS for varying screen sizes*/
 }
 
+nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#img-heading {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 #heading {
     border: rgb(0, 255, 128);
     border-style: dashed;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .main-content {
@@ -31,4 +43,43 @@ body {
 #info {
     border: rgb(255, 166, 0);
     border-style: dashed;
+}
+
+#flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 40px;
+}
+
+#flex-container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#project1 {
+    order: 1;
+    margin-right: 40px;
+    margin-left: 20px;
+}
+
+#project2 {
+    order: 2;
+    margin-right: 20px;
+    margin-left: 40px;
+}
+
+#project3 {
+    order: 1;
+    margin-right: 40px;
+    margin-left: 20px;
+}
+
+#project4 {
+    order: 2;
+    margin-right: 20px;
+    margin-left: 40px;
 }
