@@ -1,13 +1,14 @@
 * {
     box-sizing: border-box;
     padding: 0;
+    border: 0;
     margin: 0;
 }
 
-body {
-    max-width: 1080px; 
-    margin: 0 auto !important; 
-    float: none !important; 
+body { 
+    float: none !important;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 15px; 
 }
 
 @media only screen and (min-resolution: 300dpi) {
@@ -19,8 +20,53 @@ body {
 }
 
 nav {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color:darkslategray;
+    text-align: center;
+    font-size: 1.3rem;
+    color: aliceblue;
+}
+
+nav a {
+    display: inline-block;
+    color: aliceblue;
+    text-decoration: none;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+}
+
+nav a:hover {
+    background-color:darkcyan;
+}
+
+nav a:active {
+    background-color: cornflowerblue;
+}
+
+header img,
+header h1 {
+    display:inline-block;
+    vertical-align:middle;
+}
+
+header img {
+    margin-left: 10%;
+    margin-top: 110px;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    margin-right: 10%;
+    margin-top: 110px;
+    margin-bottom: 40px;
+    padding-left: 5%;
+}
+
+main {
+    margin: 0 10% !important;
 }
 
 #img-heading {
@@ -29,20 +75,12 @@ nav {
 }
 
 #heading {
-    border: rgb(0, 255, 128);
-    border-style: dashed;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
 .main-content {
-    border: blue;
-    border-style: dashed;
-}
-
-#info {
-    border: rgb(255, 166, 0);
-    border-style: dashed;
+    padding: 20px 0;
 }
 
 #flex-container {
@@ -82,4 +120,32 @@ nav {
     order: 2;
     margin-right: 20px;
     margin-left: 40px;
+}
+
+footer {
+    background-color: darkkhaki;
+    color: darkslategray;
+    font-size: 1.3rem;
+    padding: 0 10%;
+}
+
+footer a {
+    display:inline-block;
+    text-decoration: none;
+    float: right;
+    height: 50px;
+    line-height: 50px;
+    color: darkslategray;
+    padding: 0 20px;
+}
+
+footer p {
+    display:inline-block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+}
+
+footer a:hover {
+    background-color:lightgoldenrodyellow;
 }
