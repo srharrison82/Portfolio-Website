@@ -42,8 +42,8 @@ nav a:hover {
     background-color:darkcyan;
 }
 
-nav a:active {
-    background-color: cornflowerblue;
+nav a.active {
+    background-color:lightslategray;
 }
 
 header img,
@@ -130,7 +130,6 @@ footer {
 }
 
 footer a {
-    display:inline-block;
     text-decoration: none;
     float: right;
     height: 50px;
