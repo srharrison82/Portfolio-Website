@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+body { 
+    float: none !important;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 15px; 
+    background-color:#59d2fe;
+}
+
+@media only screen and (min-resolution: 300dpi) {
+    /* CSS for high resolution screens */
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    /* CSS for varying screen sizes*/
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 95%;
+    margin: 0 2.5%;
+    background-color:#00A896;
+    text-align: center;
+    font-size: 1.3rem;
+    color: aliceblue;
+    border-radius: 0 0 10px 10px;
+    border-style: solid;
+    border-width: 0 5px 5px 5px;
+    border-color: rgb(37, 58, 48);
+}
+
+nav a {
+    display: inline-block;
+    color: aliceblue;
+    text-decoration: none;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+}
+
+nav a:hover {
+    background-color:#05668D;
+    border-radius: 0 0 10px 10px;
+}
+
+nav a.active {
+    background-color:rgb(35, 81, 141);
+    border-radius: 0 0 10px 10px;
+}
+
+#h1-img {
+    margin-top: 50px;
+    padding: 40px 0;
+}
+
+#heading-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 400px;
+    border-style: solid;
+    border-width: 5px 0 5px 0;
+    border-color: rgb(37, 58, 48);
+}
+
+#h1-background {
+    background-image: url(/project-h1.png);
+    width: 100%;
+    height: 100px;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 5rem;
+    color: #05668D;
+    margin: 40px 0;
+}
+
+#project-about p,
+#project-about h3 {
+    padding: 20px 10px;
+    margin: 0 10%;
+    background-color: #05668D;
+    color: aliceblue;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+#project-about {
+    padding: 40px 0;
+}
+
+footer {
+    background-color:#00A896;
+    color:aliceblue;
+    font-size: 1.3rem;
+    padding: 0 10%;
+    width: 95%;
+    margin: 0 2.5%;
+    border-color: rgb(37, 58, 48);
+    border-radius: 10px 10px 0 0;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+}
+
+footer a {
+    text-decoration: none;
+    float: right;
+    height: 50px;
+    line-height: 50px;
+    color: aliceblue;
+    padding: 0 20px;
+}
+
+footer p {
+    display:inline-block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+}
+
+footer a:hover {
+    background-color:#05668D;
+    border-radius: 10px 10px 0 0;
+    color: aliceblue;
+}
