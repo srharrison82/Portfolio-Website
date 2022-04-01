@@ -12,8 +12,16 @@ body {
     background-color:#028090;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    /* CSS for varying screen sizes*/
+@media only screen and (min-width: 768px) and (max-width: 1378px) and (orientation: landscape) {
+    body {
+        background-color: pink;
+        /*Need to fix sizing for heading and img)*/
+    }
+
+    #img-h1 {
+        
+    }
+
 }
 
 nav {
@@ -23,18 +31,18 @@ nav {
     margin: 0 2.5%;
     background-color:#00A896;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 2vw;
     color: aliceblue;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 3vh 3vh;
 }
 
 nav a {
     display: inline-block;
     color: aliceblue;
     text-decoration: none;
-    height: 50px;
-    line-height: 50px;
-    padding: 0 20px;
+    height: 6vh;
+    line-height: 6vh;
+    padding: 0 3vw;
 }
 
 nav a:hover {
@@ -65,15 +73,16 @@ header img {
 
 header h1 {
     padding-left: 5%;
-    font-size: 5rem;
+    font-size: 6.5vw;
     overflow-wrap:normal;
-    max-height: 400px;
-    max-width: 550px;
+    width: 50%;
+    height: 50%;
+    /*max-height: 400px;
+    max-width: 550px;*/
     color: aliceblue;
 }
 
 .info {
-    /*background-color:#05668D;*/
     background-color:aliceblue;
     padding: 40px 0;
 }
