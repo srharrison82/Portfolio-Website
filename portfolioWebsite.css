@@ -12,10 +12,6 @@ body {
     background-color:#028090;
 }
 
-@media only screen and (min-resolution: 300dpi) {
-    /* CSS for high resolution screens */
-}
-
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     /* CSS for varying screen sizes*/
 }
@@ -30,9 +26,6 @@ nav {
     font-size: 1.3rem;
     color: aliceblue;
     border-radius: 0 0 10px 10px;
-    border-style: solid;
-    border-width: 0 5px 5px 5px;
-    border-color: rgb(37, 58, 48);
 }
 
 nav a {
@@ -148,7 +141,7 @@ header h1 {
     order: 1;
     margin-right: 40px;
     margin-left: 20px;
-    border: 5px solid rgb(37, 58, 48);
+    border: 5px solid #F0F3BD;
     border-radius: 15px;
 }
 
@@ -156,7 +149,7 @@ header h1 {
     order: 2;
     margin-right: 20px;
     margin-left: 40px;
-    border: 5px solid rgb(37, 58, 48);
+    border: 5px solid #F0F3BD;
     border-radius: 15px;
 }
 
@@ -164,7 +157,7 @@ header h1 {
     order: 1;
     margin-right: 40px;
     margin-left: 20px;
-    border: 5px solid rgb(37, 58, 48);
+    border: 5px solid #F0F3BD;
     border-radius: 15px;
 }
 
@@ -172,7 +165,7 @@ header h1 {
     order: 2;
     margin-right: 20px;
     margin-left: 40px;
-    border: 5px solid rgb(37, 58, 48);
+    border: 5px solid #F0F3BD;
     border-radius: 15px;
 }
 
@@ -183,10 +176,7 @@ footer {
     padding: 0 10%;
     width: 95%;
     margin: 0 2.5%;
-    border-color: rgb(37, 58, 48);
     border-radius: 10px 10px 0 0;
-    border-style: solid;
-    border-width: 5px 5px 0 5px;
 }
 
 footer a {
