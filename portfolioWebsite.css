@@ -141,7 +141,7 @@ header h1 {
     order: 1;
     margin-right: 40px;
     margin-left: 20px;
-    border: 5px solid #F0F3BD;
+    border: 5px solid aliceblue;
     border-radius: 15px;
 }
 
@@ -149,7 +149,7 @@ header h1 {
     order: 2;
     margin-right: 20px;
     margin-left: 40px;
-    border: 5px solid #F0F3BD;
+    border: 5px solid aliceblue;
     border-radius: 15px;
 }
 
@@ -157,7 +157,7 @@ header h1 {
     order: 1;
     margin-right: 40px;
     margin-left: 20px;
-    border: 5px solid #F0F3BD;
+    border: 5px solid aliceblue;
     border-radius: 15px;
 }
 
@@ -165,7 +165,7 @@ header h1 {
     order: 2;
     margin-right: 20px;
     margin-left: 40px;
-    border: 5px solid #F0F3BD;
+    border: 5px solid aliceblue;
     border-radius: 15px;
 }
 
