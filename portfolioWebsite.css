@@ -12,17 +12,9 @@ body {
     background-color:#028090;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1378px) and (orientation: landscape) {
-    body {
-        background-color: pink;
-        /*Need to fix sizing for heading and img)*/
-    }
+/*@media only screen and (min-width: 768px) and (max-width: 1378px) {
 
-    #img-h1 {
-        
-    }
-
-}
+}*/
 
 nav {
     position: fixed;
@@ -33,31 +25,31 @@ nav {
     text-align: center;
     font-size: 2vw;
     color: aliceblue;
-    border-radius: 0 0 3vh 3vh;
+    border-radius: 0 0 2vw 2vw;
 }
 
 nav a {
     display: inline-block;
     color: aliceblue;
     text-decoration: none;
-    height: 6vh;
-    line-height: 6vh;
+    height: 3vw;
+    line-height: 3vw;
     padding: 0 3vw;
 }
 
 nav a:hover {
     background-color:#05668D;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 2vw 2vw;
 }
 
 nav a.active {
     background-color:rgb(35, 81, 141);
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 2vw 2vw;
 }
 
 #img-h1 {
-    padding: 40px 5%;
-    margin: 50px 10% 0;
+    padding: 4vw 5%;
+    margin: 3vw 10% 0;
 }
 
 header img,
@@ -68,7 +60,7 @@ header h1 {
 
 header img {
     border: 5px solid aliceblue;
-    border-radius: 15px;
+    border-radius: 2vw;
 }
 
 header h1 {
@@ -77,45 +69,38 @@ header h1 {
     overflow-wrap:normal;
     width: 50%;
     height: 50%;
-    /*max-height: 400px;
-    max-width: 550px;*/
     color: aliceblue;
 }
 
 .info {
     background-color:aliceblue;
-    padding: 40px 0;
+    padding: 2vw 0;
 }
 
 #p1-background {
     background-color:#02C39A;
-    margin-left: 10%;
-    margin-bottom: 40px;
-    padding-right: 11%;
-    padding-left: 1%;
-    border-radius: 15px 0 0 15px;
-
+    margin: 2vw 0 2vw 10%;
+    padding: 0 11% 0 1%;
+    border-radius: 2vw 0 0 2vw;
 }
 
 #p2-background {
     background-color:#02C39A;
-    margin-right: 10%;
-    margin-bottom: 40px;
-    padding-left: 11%;
-    padding-right: 1%;
-    border-radius: 0 15px 15px 0;
+    margin: 2vw 10% 2vw 0;
+    padding: 0 1% 0 11%;
+    border-radius: 0 2vw 2vw 0;
 }
 
 #p3-background {
     background-color:#02C39A;
-    margin-left: 10%;
-    padding-right: 11%;
-    padding-left: 1%;
-    border-radius: 15px 0 0 15px;
+    margin: 2vw 0 2vw 10%;
+    padding: 0 11% 0 1%;
+    border-radius: 2vw 0 0 2vw;
 }
 
 .info p {
-    padding: 20px 0;
+    padding: 2vw 0;
+    color: aliceblue;
 }
 
 #flex-background {
@@ -181,31 +166,38 @@ header h1 {
 footer {
     background-color:#00A896;
     color:aliceblue;
-    font-size: 1.3rem;
+    font-size: 2vw;
     padding: 0 10%;
     width: 95%;
     margin: 0 2.5%;
-    border-radius: 10px 10px 0 0;
+    border-radius: 2vw 2vw 0 0;
 }
 
 footer a {
     text-decoration: none;
     float: right;
-    height: 50px;
-    line-height: 50px;
+    height: 3vw;
+    line-height: 3vw;
     color: aliceblue;
-    padding: 0 20px;
+    padding: 0 3vw;
 }
 
 footer p {
     display:inline-block;
-    height: 50px;
-    line-height: 50px;
-    padding: 0 20px;
+    height: 3vw;
+    line-height: 3vw;
+    padding: 0 3vw;
 }
 
 footer a:hover {
     background-color:#05668D;
-    border-radius: 10px 10px 0 0;
+    border-radius: 2vw 2vw 0 0;
     color: aliceblue;
+}
+
+@media only screen and (min-width: 0) and (max-width: 580px) {
+    footer a,
+    footer p {
+        padding: 0 1vw;
+    }
 }
