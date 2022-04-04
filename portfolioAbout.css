@@ -53,16 +53,14 @@ nav a.active {
 
 #about-background {
     background-image: url(/about-heading-background.png);
-    width: 100%;
-    height: auto;
-    background-position:left;
-    background-repeat: no-repeat;
     background-size: cover;
+    background-position:left;
 }
 
 #img-about-me {
-    padding: 40px 0;
-    margin: 50px 10% 0;
+    padding: 4vw 10%;
+    margin-top: 3vw;
+    position: relative;
 }
 
 header img,
@@ -77,13 +75,13 @@ header img {
 }
 
 header h1 {
-    font-size: 5rem;
+    font-size: 6vw;
     overflow-wrap:normal;
-    max-height: 400px;
-    max-width: 330px;
     color: aliceblue;
-    align-items: center;
-    text-align:center;
+    position: absolute;
+    left:50%;
+    transform: translate(-50%, -50%);
+    top:50%;
 }
 
 #img2 {
@@ -92,10 +90,8 @@ header h1 {
 
 #about-me-background {
     background-image: url(/about-p-background.png);
-    width: 100%;
-    height: auto;
-    background-position:left;
-    background-repeat: repeat;
+    background-position:center center;
+    background-repeat: repeat-y;
     background-size: cover;
 }
 
@@ -120,6 +116,18 @@ header h1 {
     vertical-align: middle;
     margin-bottom: 40px;
     padding: 0;
+    width: 100%;
+}
+
+@media only screen and (min-width: 0) and (max-width: 800px) {
+    #forest-banner {
+        height: 250px;
+        width: auto;
+        max-width: 100%;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
 }
 
 footer {
