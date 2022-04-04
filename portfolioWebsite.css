@@ -79,21 +79,21 @@ header h1 {
 
 #p1-background {
     background-color:#02C39A;
-    margin: 2vw 0 2vw 10%;
+    margin: 2vw 0 4vw 10%;
     padding: 0 11% 0 1%;
     border-radius: 2vw 0 0 2vw;
 }
 
 #p2-background {
     background-color:#02C39A;
-    margin: 2vw 10% 2vw 0;
+    margin: 4vw 10% 4vw 0;
     padding: 0 1% 0 11%;
     border-radius: 0 2vw 2vw 0;
 }
 
 #p3-background {
     background-color:#02C39A;
-    margin: 2vw 0 2vw 10%;
+    margin: 4vw 0 2vw 10%;
     padding: 0 11% 0 1%;
     border-radius: 2vw 0 0 2vw;
 }
@@ -105,10 +105,6 @@ header h1 {
 
 #flex-background {
     background-image: url(/flex-background.png);
-    width: 100%;
-    height: auto;
-    background-position:left;
-    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -116,51 +112,40 @@ header h1 {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    padding-top: 40px;
-    margin: 0 10%;
-    margin-top: 40px;
+    margin: 4vw 10%;
 }
 
 #flex-container2 {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    margin: 0 10%;
-    margin-bottom: 40px;
+    margin: 4vw 10%;
 }
 
 #project1 {
     order: 1;
-    margin-right: 40px;
-    margin-left: 20px;
+    margin-right: 4vw;
     border: 5px solid aliceblue;
-    border-radius: 15px;
+    border-radius: 2vw;
 }
 
 #project2 {
     order: 2;
-    margin-right: 20px;
-    margin-left: 40px;
     border: 5px solid aliceblue;
-    border-radius: 15px;
+    border-radius: 2vw;
 }
 
 #project3 {
     order: 1;
-    margin-right: 40px;
-    margin-left: 20px;
     border: 5px solid aliceblue;
-    border-radius: 15px;
+    border-radius: 2vw;
 }
 
 #project4 {
     order: 2;
-    margin-right: 20px;
-    margin-left: 40px;
+    margin-left: 4vw;
     border: 5px solid aliceblue;
-    border-radius: 15px;
+    border-radius: 2vw;
 }
 
 footer {
