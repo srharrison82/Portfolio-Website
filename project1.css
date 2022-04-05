@@ -67,7 +67,7 @@ nav a.active {
 }
 
 #h1-background {
-    background-image: url(/project-h1.png);
+    background-image: url(./project-h1.png);
     width: 100%;
     height: 8vw;
     background-position:center;

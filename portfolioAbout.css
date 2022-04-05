@@ -90,7 +90,7 @@ header h1 {
 }
 
 #about-me-background {
-    background-image: url(/about-p-background.png);
+    background-image: url(./about-p-background.png);
     background-position:center center;
     background-repeat: repeat-y;
     background-size: cover;
