@@ -30,6 +30,7 @@ nav {
     font-size: 2vw;
     color: aliceblue;
     border-radius: 0 0 2vw 2vw;
+    z-index: 1;
 }
 
 nav a {
@@ -97,40 +98,34 @@ header h1 {
 
 #about-me p,
 #about-me h3 {
-    padding: 20px 10px;
-    margin: 0 10%;
+    padding: 2% 2%;
+    margin: 2vw 10%;
     background-color: #028090;
     color: aliceblue;
-    border-radius: 15px;
-    margin-bottom: 20px;
+    border-radius: 2vw;
 }
 
 #about-me {
-    padding: 40px 0;
+    padding: 2vw 0;
 }
 
-#forest-banner {
+#footer-info {
+    position: relative;
+    background-image: url(./lake.jpg);
     border-color: #F0F3BD;
     border-style: solid;
-    border-width: 5px 0 5px 0;
-    vertical-align: middle;
-    margin-bottom: 40px;
-    padding: 0;
-    width: 100%;
+    border-width: 5px 0 0 0;
+    height: 500px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    width: auto;
+    max-width: 100%;
 }
 
-@media only screen and (min-width: 0) and (max-width: 800px) {
-    #forest-banner {
-        height: 250px;
-        width: auto;
-        max-width: 100%;
-        object-fit: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
-}
-
-footer {
+#footer-details {
+    position: absolute;
+    bottom: 0;
     background-color:#00A896;
     color:aliceblue;
     font-size: 2vw;
@@ -140,7 +135,7 @@ footer {
     border-radius: 2vw 2vw 0 0;
 }
 
-footer a {
+#footer-details a {
     text-decoration: none;
     float: right;
     height: 3vw;
@@ -149,22 +144,22 @@ footer a {
     padding: 0 3vw;
 }
 
-footer p {
+#footer-details p {
     display:inline-block;
     height: 3vw;
     line-height: 3vw;
     padding: 0 3vw;
 }
 
-footer a:hover {
+#footer-details a:hover {
     background-color:#05668D;
     border-radius: 2vw 2vw 0 0;
     color: aliceblue;
 }
 
 @media only screen and (min-width: 0) and (max-width: 580px) {
-    footer a,
-    footer p {
+    #footer-details a,
+    #footer-details p {
         padding: 0 1vw;
     }
 }
