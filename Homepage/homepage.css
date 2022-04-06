@@ -104,7 +104,7 @@ header h1 {
 }
 
 #flex-background {
-    background-image: url(./flex-background.png);
+    background-image: url(../Images/flex-background.png);
     background-size: cover;
 }
 

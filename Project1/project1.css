@@ -9,7 +9,7 @@ body {
     float: none !important;
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     font-size: 15px; 
-    background-color:#F0F3BD;
+    background-color:#59d2fe;
 }
 
 @media only screen and (min-resolution: 300dpi) {
@@ -30,7 +30,6 @@ nav {
     font-size: 2vw;
     color: aliceblue;
     border-radius: 0 0 2vw 2vw;
-    z-index: 1;
 }
 
 nav a {
@@ -52,80 +51,51 @@ nav a.active {
     border-radius: 0 0 2vw 2vw;
 }
 
-#about-background {
-    background-image: url(./about-heading-background.png);
-    background-size: cover;
-    background-position:left;
-}
-
-#img-about-me {
-    padding: 4vw 10%;
+#h1-img {
     margin-top: 3vw;
-    position: relative;
+    padding: 4vw 0;
 }
 
-header img,
-header h1 {
-    display:inline-block;
-    vertical-align:middle;
+#heading-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 400px;
+    border-style: solid;
+    border-width: 5px 0 5px 0;
+    border-color: aliceblue;
 }
 
-header img {
-    border: 5px solid #F0F3BD;
-    border-radius: 2vw;
-}
-
-header h1 {
-    font-size: 6vw;
-    overflow-wrap:normal;
-    color: aliceblue;
-    position: absolute;
-    left:50%;
-    transform: translate(-50%, -50%);
-    top:50%;
-}
-
-#img2 {
-    float: right;
-}
-
-#about-me-background {
-    background-image: url(./about-p-background.png);
-    background-position:center center;
-    background-repeat: repeat-y;
+#h1-background {
+    background-image: url(../Images/project-h1.png);
+    width: 100%;
+    height: 8vw;
+    background-position:center;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
-#about-me p,
-#about-me h3 {
-    padding: 2% 2%;
-    margin: 2vw 10%;
-    background-color: #028090;
+header h1 {
+    text-align: center;
+    font-size: 6.5vw;
+    color: #05668D;
+    margin: 4vw 0;
+}
+
+#project-about p,
+#project-about h3 {
+    padding: 2vw 2vw;
+    margin: 0 10% 2vw;
+    background-color: #05668D;
     color: aliceblue;
     border-radius: 2vw;
 }
 
-#about-me {
-    padding: 2vw 0;
+#project-about {
+    padding: 0 0 2vw 0;
 }
 
-#footer-info {
-    position: relative;
-    background-image: url(./lake.jpg);
-    border-color: #F0F3BD;
-    border-style: solid;
-    border-width: 5px 0 0 0;
-    height: 500px;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    width: auto;
-    max-width: 100%;
-}
-
-#footer-details {
-    position: absolute;
-    bottom: 0;
+footer {
     background-color:#00A896;
     color:aliceblue;
     font-size: 2vw;
@@ -135,7 +105,7 @@ header h1 {
     border-radius: 2vw 2vw 0 0;
 }
 
-#footer-details a {
+footer a {
     text-decoration: none;
     float: right;
     height: 3vw;
@@ -144,22 +114,22 @@ header h1 {
     padding: 0 3vw;
 }
 
-#footer-details p {
+footer p {
     display:inline-block;
     height: 3vw;
     line-height: 3vw;
     padding: 0 3vw;
 }
 
-#footer-details a:hover {
+footer a:hover {
     background-color:#05668D;
     border-radius: 2vw 2vw 0 0;
     color: aliceblue;
 }
 
 @media only screen and (min-width: 0) and (max-width: 580px) {
-    #footer-details a,
-    #footer-details p {
+    footer a,
+    footer p {
         padding: 0 1vw;
     }
 }
