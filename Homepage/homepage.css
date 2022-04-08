@@ -47,6 +47,12 @@ nav a.active {
     border-radius: 0 0 2vw 2vw;
 }
 
+#img-h1-background {
+    background-image: url(../Images/homepage-heading.png);
+    background-size: cover;
+    background-position:left;
+}
+
 #img-h1 {
     padding: 4vw 5%;
     margin: 3vw 10% 0;
