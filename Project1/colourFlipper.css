@@ -9,7 +9,7 @@ body {
     float: none !important;
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     font-size: 15px; 
-    background-color:#000000;
+    background-color:#05668D;
 }
 
 @media only screen and (min-resolution: 300dpi) {
@@ -47,7 +47,7 @@ nav a:hover {
 }
 
 nav a.active {
-    background-color:#a8c7d3;
+    background-color:#59d2fe;
     border-radius: 0 0 1vw 1vw;
     color: aliceblue;
 }
@@ -84,9 +84,8 @@ header h1 {
 .btn {
     font-size: 30px;
     color: aliceblue;
-    background-color: #a8c7d3;
+    background-color: #59d2fe;
     display: inline-block;
-    border: solid 5px #05668D;
     border-radius: 1vw;
     padding: 10px;
     width: 200px;
@@ -102,35 +101,18 @@ header h1 {
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
     background-color:aliceblue;
     color:#05668D;
     font-size: 2vw;
-    padding: 0 10%;
     width: 100%;
-}
-
-footer a {
-    text-decoration: none;
-    float: right;
-    height: 3vw;
-    line-height: 3vw;
-    color: #05668D;
-    padding: 0 3vw;
+    position: absolute;
+    bottom: 0;
 }
 
 footer p {
-    display:inline-block;
+    text-align: center;
     height: 3vw;
     line-height: 3vw;
-    padding: 0 3vw;
-}
-
-footer a:hover {
-    background-color:#05668D;
-    border-radius: 1vw 1vw 0 0;
-    color: aliceblue;
 }
 
 @media only screen and (min-width: 0) and (max-width: 580px) {
