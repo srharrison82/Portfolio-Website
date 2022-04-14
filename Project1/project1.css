@@ -36,6 +36,7 @@ nav a {
     display: inline-block;
     color: aliceblue;
     text-decoration: none;
+    width: 15vw;
     height: 3vw;
     line-height: 3vw;
     padding: 0 3vw;

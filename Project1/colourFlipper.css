@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+body { 
+    float: none !important;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 15px; 
+    background-color:#59d2fe;
+}
+
+@media only screen and (min-resolution: 300dpi) {
+    /* CSS for high resolution screens */
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    /* CSS for varying screen sizes*/
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color:aliceblue;
+    text-align: center;
+    font-size: 2vw;
+    color: #05668D;
+}
+
+nav a {
+    display: inline-block;
+    color: #05668D;
+    text-decoration: none;
+    width: 20vw;
+    height: 3vw;
+    line-height: 3vw;
+    padding: 0 3vw;
+}
+
+nav a:hover {
+    background-color:#05668D;
+    color: aliceblue;
+    border-radius: 0 0 1vw 1vw;
+}
+
+nav a.active {
+    background-color:#a8c7d3;
+    border-radius: 0 0 1vw 1vw;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    display: inline-block;
+    margin: 3vw;
+    padding: 3vw 0;
+    color: aliceblue;
+    font-size: 5vw;
+}
+
+#container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2vw;
+    color: #05668D;
+    background-color: aliceblue;
+    text-align: center;
+    border-radius: 1vw;
+}
+
+#container h2 {
+    margin: 2vw;
+}
+
+.btn {
+    font-size: 2vw;
+    color: #05668D;
+    background-color: aliceblue;
+    display: inline-block;
+    border: solid 5px #05668D;
+    border-radius: 1vw;
+    padding: 1vw;
+    margin: 2vw;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color:aliceblue;
+    color:#05668D;
+    font-size: 2vw;
+    padding: 0 10%;
+    width: 100%;
+}
+
+footer a {
+    text-decoration: none;
+    float: right;
+    height: 3vw;
+    line-height: 3vw;
+    color: #05668D;
+    padding: 0 3vw;
+}
+
+footer p {
+    display:inline-block;
+    height: 3vw;
+    line-height: 3vw;
+    padding: 0 3vw;
+}
+
+footer a:hover {
+    background-color:#05668D;
+    border-radius: 1vw 1vw 0 0;
+    color: aliceblue;
+}
+
+@media only screen and (min-width: 0) and (max-width: 580px) {
+    footer a,
+    footer p {
+        padding: 0 1vw;
+    }
+}
