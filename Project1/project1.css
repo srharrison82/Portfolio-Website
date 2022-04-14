@@ -83,13 +83,30 @@ header h1 {
     margin: 4vw 0;
 }
 
-#project-about p,
-#project-about h3 {
+#project-about p {
     padding: 2vw 2vw;
     margin: 0 10% 2vw;
     background-color: #05668D;
     color: aliceblue;
     border-radius: 2vw;
+}
+
+#project-about h3 {
+    padding: 2vw 2vw;
+    margin: 0 40% 2vw;
+    border-radius: 2vw;
+    text-align: center;
+    background-color: aliceblue;
+    color: #02C39A;
+}
+
+#project-about a {
+    text-decoration: none;
+}
+
+#project-about a:hover {
+    background-color: #02C39A;
+    color: aliceblue; /*Cannot get to work, also need to fix footer which moves unexpectedly - have positioned as fixed for now.*/
 }
 
 #project-about {
@@ -104,6 +121,8 @@ footer {
     width: 95%;
     margin: 0 2.5%;
     border-radius: 2vw 2vw 0 0;
+    position: fixed;
+    bottom: 0;
 }
 
 footer a {
