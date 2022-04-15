@@ -5,11 +5,16 @@
     margin: 0;
 }
 
+html {
+    position: relative; /*To allow for use of absolute with footer*/
+    min-height: 100%; /*Keeps footer at 'bottom:0;' */
+}
+
 body { 
     float: none !important;
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     font-size: 15px; 
-    background-color:#59d2fe;
+    background-color:#81c3c9;
 }
 
 nav {
@@ -60,22 +65,21 @@ nav a.active {
 }
 
 #h1-background {
-    background-image: url(../Images/project-h1.png);
+    background-color: aliceblue;
     width: 100%;
-    height: 8vw;
-    background-position:center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 120px;
 }
 
 header h1 {
     text-align: center;
-    font-size: 6.5vw;
+    font-size: 90px;
     color: #028090;
     margin: 4vw 0;
+    vertical-align: middle;
+    line-height: 120px; 
 }
 
-#project-about p {
+.project-about {
     padding: 2vw 2vw;
     margin: 0 10% 2vw;
     background-color: #028090;
@@ -83,26 +87,38 @@ header h1 {
     border-radius: 2vw;
 }
 
-#project-about h3 {
-    padding: 2vw 2vw;
-    margin: 0 40% 2vw;
-    border-radius: 2vw;
+#switch-click {
+    width: 100%;
     text-align: center;
-    background-color: aliceblue;
-    color: #02C39A;
 }
 
 #project-about a {
     text-decoration: none;
+    color: #02C39A;
+    font-size: 25px;
+    padding: 20px 20px;
+    width: 400px;
+    display:inline-block;
+    margin:0 auto;
+    border-radius: 2vw;
+    text-align: center;
+    background-color: aliceblue;
+    border-width: 4px;
+    border-color: aliceblue;
+    border-style: solid;
 }
 
 #project-about a:hover {
     background-color: #02C39A;
-    color: aliceblue; /*Cannot get to work, also need to fix footer which moves unexpectedly - have positioned as fixed for now.*/
+    color: aliceblue; 
+    border-radius: 2vw;
+    border-width: 4px;
+    border-color: aliceblue;
+    border-style: solid;
 }
 
 #project-about {
-    padding: 0 0 2vw 0;
+    padding: 0 0 6vw 0;
 }
 
 footer {
@@ -111,9 +127,9 @@ footer {
     font-size: 2vw;
     padding: 0 5%;
     width: 95%;
-    margin: 0 2.5%;
+    margin: 0 2.5% 0 2.5%;
     border-radius: 2vw 2vw 0 0;
-    position: fixed;
+    position: absolute;
     bottom: 0;
 }
 

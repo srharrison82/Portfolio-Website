@@ -5,19 +5,16 @@
     margin: 0;
 }
 
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body { 
     float: none !important;
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     font-size: 15px; 
     background-color:#485262;
-}
-
-@media only screen and (min-resolution: 300dpi) {
-    /* CSS for high resolution screens */
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    /* CSS for varying screen sizes*/
 }
 
 nav {
