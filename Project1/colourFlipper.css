@@ -9,7 +9,7 @@ body {
     float: none !important;
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     font-size: 15px; 
-    background-color:#05668D;
+    background-color:#485262;
 }
 
 @media only screen and (min-resolution: 300dpi) {
@@ -98,6 +98,7 @@ header h1 {
 
 .btn:hover {
     background-color:#05668D;
+    cursor: pointer;
 }
 
 footer {
@@ -113,11 +114,4 @@ footer p {
     text-align: center;
     height: 3vw;
     line-height: 3vw;
-}
-
-@media only screen and (min-width: 0) and (max-width: 580px) {
-    footer a,
-    footer p {
-        padding: 0 1vw;
-    }
 }
