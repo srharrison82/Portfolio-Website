@@ -87,12 +87,12 @@ header h1 {
     border-radius: 2vw;
 }
 
-#switch-click {
+.click {
     width: 100%;
     text-align: center;
 }
 
-#project-about a {
+.projects a {
     text-decoration: none;
     color: #02C39A;
     font-size: 25px;
@@ -108,7 +108,7 @@ header h1 {
     border-style: solid;
 }
 
-#project-about a:hover {
+.projects a:hover {
     background-color: #02C39A;
     color: aliceblue; 
     border-radius: 2vw;
@@ -117,7 +117,7 @@ header h1 {
     border-style: solid;
 }
 
-#project-about {
+.projects {
     padding: 0 0 6vw 0;
 }
 
