@@ -18,14 +18,33 @@
     </header>
 
     <main>
-      <div class="container">
-        <h2>Our Photos</h2>
-        <div class="underline">
-          
+      <section>
+        <div class="container">
+          <h2>Photo Carousel</h2>
+          <div class="underline"></div>
         </div>
-      </div>
-    
-        <script type="text/javascript" src="./photoCarousel.js"></script>
+
+        <article class="container">
+          <div class="img-container">
+            <img src="../../Images/me1.jpeg" id="person-img" />
+          </div>
+          <h4 id="location">Location</h4>
+          <p id="date">Date</p>
+          <p id="info">What did I do here?</p>
+          <div class="button-container">
+            <button class="btn">
+              <i class="click click-left">Left</i>
+            </button>
+            <button class="btn">
+              <i class="click click-right">Right</i>
+            </button>
+          </div>
+
+          <button class="btn">Surprise Me</button>
+        </article>
+      </section>
+
+      <script type="text/javascript" src="./photoCarousel.js"></script>
     </main>
 
     <footer>

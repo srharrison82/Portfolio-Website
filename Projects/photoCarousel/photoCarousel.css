@@ -5,11 +5,6 @@
     margin: 0;
 }
 
-html {
-    position: relative;
-    min-height: 100%;
-}
-
 body { 
     float: none !important;
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -53,6 +48,46 @@ nav a.active {
 }
 
 .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 5px;
+    border: 3px solid green;
+}
+
+.img-container img {
+    height: 300px;
+}
+
+#location {
+    font-size: 30px;
+}
+
+#date {
+    font-size: 25px;
+}
+
+#info {
+    font-size: 20px;
+}
+
+.btn {
+    font-size: 35px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    border: 3px solid aliceblue;
+}
+
+.btn:hover {
+    background-color:darkslategray;
+    cursor: pointer;
+    color: aliceblue;
+    border: 3px solid aliceblue;
+}
+
+/* .container {
     position: absolute;
     top: 40%;
     left: 50%;
@@ -100,7 +135,7 @@ h1 {
     cursor: pointer;
     color: aliceblue;
     border: 3px solid aliceblue;
-}
+} */
 
 footer {
     background-color:aliceblue;
