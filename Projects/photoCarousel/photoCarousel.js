@@ -41,11 +41,11 @@ const randomBtn = document.querySelector('.random-btn')
 let currentItem = 0;
 
 window.addEventListener('DOMContentLoaded', function() {
-    showImg(currentItem);
+    showPhoto();
 })
 
-function showPhoto(photo) {
-    const item = carousel[photo];
+function showPhoto() {
+    const item = carousel[currentItem];
     img.src = item.img;
     place.textContent = item.location;
     date.textContent = item.date;
@@ -54,12 +54,21 @@ function showPhoto(photo) {
 
 nextBtn.addEventListener('click', function() {
     currentItem++;
-    showPhoto(currentItem);
+    if(currentItem > carousel.length - 1) {
+        currentItem = 0
+    }  
+    showPhoto();
 })
 
 prevBtn.addEventListener('click', function() {
     currentItem--;
-    showPhoto(currentItem);
+    if(currentItem < 0) {
+        currentItem = carousel.length - 1;
+    }
+    showPhoto();
 })
 
-
+randomBtn.addEventListener('click', function() {
+    currentItem = Math.floor(Math.random() * carousel.length);
+    showPhoto();
+})
