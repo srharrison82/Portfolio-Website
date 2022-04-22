@@ -17,39 +17,53 @@ nav {
     top: 0;
     width: 100%;
     background-color:#414833;
-    text-align: center;
-    font-size: 2vw;
+    font-size: 30px;
+    overflow: hidden;
 }
 
 nav a {
     display: inline-block;
     color: aliceblue;
     text-decoration: none;
-    width: 22vw;
-    height: 3vw;
-    line-height: 3vw;
-    padding: 0 3vw;
+    padding: 5px 10px;
+    margin: 0 10px;
+    text-align: center;
+    min-height: 40px;
 }
 
 nav a:hover {
     background-color:#656d4a;
     color: aliceblue;
-    border-radius: 0 0 1vw 1vw;
 }
 
 nav a.active {
-    background-color:#c2c5aa;
-    border-radius: 0 0 1vw 1vw;
-    color: aliceblue;
+    background-color:aliceblue;
+    color: #656d4a;
+}
+
+#home-nav,
+#projects-nav {
+    float: left;
+}
+
+#photo-nav {
+    float: right;
 }
 
 .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: 60px;
     text-align: center;
 }
+
+@media only screen and (max-width: 520px) {
+    #home-nav {
+        margin-right: 0;
+    }
+
+    #projects-nav {
+        margin-left: 0;
+    }
+  }
 
 .h2-container {
     font-size: 30px;
@@ -84,7 +98,10 @@ button {
 
 .img-container img {
     height: 300px;
+    width: 300px;
     border-radius: 30%;
+    object-fit: cover;
+    border: 3px solid #582f0e;
 }
 
 #location {
@@ -93,10 +110,12 @@ button {
 
 #date {
     font-size: 15px;
+    text-decoration: underline;
 }
 
 #info {
     font-size: 15px;
+    height: 30px;
 }
 
 .btn {
@@ -119,14 +138,18 @@ button {
 footer {
     background-color:#414833;
     color:aliceblue;
-    font-size: 2vw;
+    font-size: 30px;
     width: 100%;
+    min-height: 40px;
+    vertical-align: middle;
+    text-align: center;
+    padding: 0 15px;
     position: absolute;
     bottom: 0;
 }
 
-footer p {
-    text-align: center;
-    height: 3vw;
-    line-height: 3vw;
-}
+@media only screen and (max-width: 588px) {
+    footer {
+        font-size: 25px;
+    }
+  }
