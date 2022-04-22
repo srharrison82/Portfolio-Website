@@ -19,30 +19,39 @@ nav {
     margin: 0 2.5%;
     background-color:#00A896;
     text-align: center;
-    font-size: 2vw;
+    font-size: 30px;
     color: aliceblue;
-    border-radius: 0 0 2vw 2vw;
+    border-radius: 0 0 20px 20px;
 }
 
 nav a {
     display: inline-block;
     color: aliceblue;
     text-decoration: none;
-    width: 20vw;
-    height: 3vw;
-    line-height: 3vw;
-    padding: 0 3vw;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 5px;
 }
 
 nav a:hover {
     background-color:#05668D;
-    border-radius: 0 0 1vw 1vw;
 }
 
 nav a.active {
-    background-color:rgb(35, 81, 141);
-    border-radius: 0 0 1vw 1vw;
+    background-color:#028090;
 }
+
+@media only screen and (max-width: 640px) {
+    nav a {
+        margin: 0;
+        width: 130px;
+    }
+
+    nav {
+        font-size: 25px;
+    }
+  }
 
 #img-h1-background {
     background-image: url(../Images/homepage-heading.png);
@@ -51,8 +60,8 @@ nav a.active {
 }
 
 #img-h1 {
-    padding: 4vw 5%;
-    margin: 3vw 10% 0;
+    padding: 40px 5%;
+    margin: 40px 10% 0;
 }
 
 header img,
@@ -63,7 +72,7 @@ header h1 {
 
 header img {
     border: 5px solid aliceblue;
-    border-radius: 2vw;
+    border-radius: 20px;
 }
 
 header h1 {
@@ -77,32 +86,32 @@ header h1 {
 
 .info {
     background-color:aliceblue;
-    padding: 2vw 0;
+    padding: 20px 0;
 }
 
 #p1-background {
     background-color:#02C39A;
-    margin: 2vw 0 2vw 9%;
-    padding: 0 11% 0 2%;
-    border-radius: 2vw 0 0 2vw;
+    margin: 20px 0 20px 7%;
+    padding: 0 11% 0 4%;
+    border-radius: 20px 0 0 20px;
 }
 
 #p2-background {
     background-color:#02C39A;
-    margin: 2vw 9% 2vw 0;
-    padding: 0 2% 0 11%;
-    border-radius: 0 2vw 2vw 0;
+    margin: 20px 7% 20px 0;
+    padding: 0 4% 0 11%;
+    border-radius: 0 20px 20px 0;
 }
 
 #p3-background {
     background-color:#02C39A;
-    margin: 2vw 0 2vw 9%;
-    padding: 0 11% 0 2%;
-    border-radius: 2vw 0 0 2vw;
+    margin: 20px 0 20px 7%;
+    padding: 0 11% 0 4%;
+    border-radius: 20px 0 0 20px;
 }
 
 .info p {
-    padding: 2vw 0;
+    padding: 20px 0;
     color: aliceblue;
 }
 
@@ -154,33 +163,42 @@ header h1 {
 footer {
     background-color:#00A896;
     color:aliceblue;
-    font-size: 2vw;
+    font-size: 30px;
     padding: 0 5%;
     width: 95%;
     margin: 0 2.5%;
-    border-radius: 2vw 2vw 0 0;
+    border-radius: 20px 20px 0 0;
 }
 
 footer a {
     text-decoration: none;
     float: right;
-    width: 20vw;
     text-align: center;
-    height: 3vw;
-    line-height: 3vw;
+    height: 40px;
+    line-height: 40px;
     color: aliceblue;
-    padding: 0 3vw;
+    padding: 0 10px;
 }
 
 footer p {
     display:inline-block;
-    height: 3vw;
-    line-height: 3vw;
-    padding: 0 3vw;
+    height: 40px;
+    line-height: 40px;
 }
 
 footer a:hover {
     background-color:#05668D;
-    border-radius: 1vw 1vw 0 0;
     color: aliceblue;
 }
+
+@media only screen and (max-width: 880px) {
+    footer {
+        font-size: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    footer {
+        font-size: 15px;
+    }
+  }
