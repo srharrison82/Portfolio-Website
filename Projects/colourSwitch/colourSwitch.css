@@ -22,31 +22,34 @@ nav {
     top: 0;
     width: 100%;
     background-color:aliceblue;
-    text-align: center;
-    font-size: 2vw;
-    color: #05668D;
+    font-size: 30px;
 }
 
 nav a {
     display: inline-block;
     color: #05668D;
     text-decoration: none;
-    width: 20vw;
-    height: 3vw;
-    line-height: 3vw;
-    padding: 0 3vw;
+    padding: 5px 10px;
+    margin: 0 10px;
 }
 
 nav a:hover {
-    background-color:#05668D;
+    background-color:#59d2fe;
     color: aliceblue;
-    border-radius: 0 0 1vw 1vw;
 }
 
 nav a.active {
-    background-color:#59d2fe;
-    border-radius: 0 0 1vw 1vw;
+    background-color:#485262;
     color: aliceblue;
+}
+
+#home-nav,
+#projects-nav {
+    float: left;
+}
+
+#colour-nav {
+    float: right;
 }
 
 header {
@@ -101,6 +104,25 @@ header h1 {
 footer {
     background-color:aliceblue;
     color:#05668D;
+    font-size: 30px;
+    width: 100%;
+    min-height: 40px;
+    vertical-align: middle;
+    text-align: center;
+    padding: 0 15px;
+    position: absolute;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 588px) {
+    footer {
+        font-size: 25px;
+    }
+}
+
+/* footer {
+    background-color:aliceblue;
+    color:#05668D;
     font-size: 2vw;
     width: 100%;
     position: absolute;
@@ -111,4 +133,4 @@ footer p {
     text-align: center;
     height: 3vw;
     line-height: 3vw;
-}
+} */
