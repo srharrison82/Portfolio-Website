@@ -51,7 +51,7 @@ nav a.active {
     nav {
         font-size: 25px;
     }
-  }
+}
 
 #img-h1-background {
     background-image: url(../Images/homepage-heading.png);
@@ -195,10 +195,10 @@ footer a:hover {
     footer {
         font-size: 20px;
     }
-  }
+}
 
   @media only screen and (max-width: 600px) {
     footer {
         font-size: 15px;
     }
-  }
+}

@@ -19,30 +19,40 @@ nav {
     margin: 0 2.5%;
     background-color:#00A896;
     text-align: center;
-    font-size: 2vw;
+    font-size: 30px;
     color: aliceblue;
-    border-radius: 0 0 2vw 2vw;
-    z-index: 1;
+    border-radius: 0 0 20px 20px;
+    z-index: 100;
 }
 
 nav a {
     display: inline-block;
     color: aliceblue;
     text-decoration: none;
-    width: 20vw;
-    height: 3vw;
-    line-height: 3vw;
-    padding: 0 3vw;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 5px;
 }
 
 nav a:hover {
     background-color:#05668D;
-    border-radius: 0 0 1vw 1vw;
 }
 
 nav a.active {
-    background-color:rgb(35, 81, 141);
-    border-radius: 0 0 1vw 1vw;
+    background-color:#F0F3BD;
+    color: #00A896;
+}
+
+@media only screen and (max-width: 640px) {
+    nav a {
+        margin: 0;
+        width: 130px;
+    }
+
+    nav {
+        font-size: 25px;
+    }
 }
 
 #about-background {
@@ -53,7 +63,7 @@ nav a.active {
 
 #img-about-me {
     padding: 4vw 10%;
-    margin-top: 3vw;
+    margin-top: 40px;
     position: relative;
 }
 
@@ -65,7 +75,7 @@ header h1 {
 
 header img {
     border: 5px solid #F0F3BD;
-    border-radius: 2vw;
+    border-radius: 20px;
 }
 
 header h1 {
@@ -91,15 +101,15 @@ header h1 {
 
 #about-me p,
 #about-me h3 {
-    padding: 2% 2%;
-    margin: 2vw 10%;
+    padding: 20px;
+    margin: 20px 10%;
     background-color: #028090;
     color: aliceblue;
-    border-radius: 2vw;
+    border-radius: 20px;
 }
 
 #about-me {
-    padding: 2vw 0;
+    padding: 20px 0;
 }
 
 #footer-info {
@@ -121,33 +131,42 @@ header h1 {
     bottom: 0;
     background-color:#00A896;
     color:aliceblue;
-    font-size: 2vw;
+    font-size: 30px;
     padding: 0 5%;
     width: 95%;
     margin: 0 2.5%;
-    border-radius: 2vw 2vw 0 0;
+    border-radius: 20px 20px 0 0;
 }
 
 #footer-details a {
     text-decoration: none;
     float: right;
     text-align: center;
-    width: 20vw;
-    height: 3vw;
-    line-height: 3vw;
+    height: 40px;
+    line-height: 40px;
     color: aliceblue;
-    padding: 0 3vw;
+    padding: 0 10px;
 }
 
 #footer-details p {
     display:inline-block;
-    height: 3vw;
-    line-height: 3vw;
-    padding: 0 3vw;
+    height: 40px;
+    line-height: 40px;
 }
 
 #footer-details a:hover {
     background-color:#05668D;
-    border-radius: 1vw 1vw 0 0;
     color: aliceblue;
+}
+
+@media only screen and (max-width: 880px) {
+    #footer-details {
+        font-size: 20px;
+    }
+}
+
+  @media only screen and (max-width: 600px) {
+    #footer-details {
+        font-size: 15px;
+    }
 }
