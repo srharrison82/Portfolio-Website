@@ -74,8 +74,9 @@ header h1 {
 }
 
 header img {
-    border: 5px solid #F0F3BD;
     border-radius: 20px;
+    /* box-shadow: 5px 5px darkslategray; */
+    box-shadow: 6px 8px 16px 6px rgba(0, 0, 0, 0.20), 6px 12px 40px 6px rgba(0, 0, 0, 0.19);
 }
 
 header h1 {
@@ -106,6 +107,13 @@ header h1 {
     background-color: #028090;
     color: aliceblue;
     border-radius: 20px;
+    box-shadow: 5px 5px darkslategray;
+}
+
+#about-me h3 {
+    border-width: 5px;
+    border-color: aliceblue;
+    border-style: solid;
 }
 
 #about-me {

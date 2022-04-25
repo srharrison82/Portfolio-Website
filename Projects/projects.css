@@ -6,8 +6,8 @@
 }
 
 html {
-    position: relative; /*To allow for use of absolute with footer*/
-    min-height: 100%; /*Keeps footer at 'bottom:0;' */
+    position: relative;
+    min-height: 100%;
 }
 
 body { 
@@ -67,7 +67,6 @@ nav a.active {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-height: 400px;
 }
 
 #h1-background {
@@ -95,8 +94,9 @@ header h1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     border-radius: 20px;
+    box-shadow: 6px 8px 16px 6px rgba(0, 0, 0, 0.20), 6px 12px 40px 6px rgba(0, 0, 0, 0.19);
 }
 
 .projects-h2,
@@ -106,6 +106,7 @@ header h1 {
     background-color: #028090;
     color: aliceblue;
     border-radius: 20px;
+    box-shadow: 5px 5px darkslategrey;
 }
 
 .projects-h2 {
@@ -133,6 +134,7 @@ header h1 {
     border-width: 5px;
     border-color: aliceblue;
     border-style: solid;
+    box-shadow: 5px 5px darkslategray;
 }
 
 .projects a:hover {
@@ -142,6 +144,14 @@ header h1 {
     border-width: 5px;
     border-color: aliceblue;
     border-style: solid;
+}
+
+.underline {
+    height: 10px;
+    width: 80%;
+    background-color: darkslategrey;
+    margin: 0 auto 40px;
+    border-radius: 3px;
 }
 
 footer {

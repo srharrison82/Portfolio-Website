@@ -71,8 +71,9 @@ header h1 {
 }
 
 header img {
-    border: 5px solid aliceblue;
     border-radius: 20px;
+    /* box-shadow: 5px 5px darkslategray; */
+    box-shadow: 6px 8px 16px 6px rgba(0, 0, 0, 0.20), 6px 12px 40px 6px rgba(0, 0, 0, 0.19);
 }
 
 header h1 {
@@ -94,6 +95,7 @@ header h1 {
     margin: 20px 0 20px 7%;
     padding: 0 11% 0 4%;
     border-radius: 20px 0 0 20px;
+    box-shadow: 5px 5px darkslategrey;
 }
 
 #p2-background {
@@ -101,6 +103,7 @@ header h1 {
     margin: 20px 7% 20px 0;
     padding: 0 4% 0 11%;
     border-radius: 0 20px 20px 0;
+    box-shadow: 5px 5px darkslategrey;
 }
 
 #p3-background {
@@ -108,6 +111,7 @@ header h1 {
     margin: 20px 0 20px 7%;
     padding: 0 11% 0 4%;
     border-radius: 20px 0 0 20px;
+    box-shadow: 5px 5px darkslategrey;
 }
 
 .info p {
@@ -137,26 +141,26 @@ header h1 {
 #project1 {
     order: 1;
     margin-right: 4vw;
-    border: 5px solid aliceblue;
+    box-shadow: 5px 5px darkslategrey;
     border-radius: 2vw;
 }
 
 #project2 {
     order: 2;
-    border: 5px solid aliceblue;
+    box-shadow: 5px 5px darkslategrey;
     border-radius: 2vw;
 }
 
 #project3 {
     order: 1;
-    border: 5px solid aliceblue;
+    box-shadow: 5px 5px darkslategrey;
     border-radius: 2vw;
 }
 
 #project4 {
     order: 2;
     margin-left: 4vw;
-    border: 5px solid aliceblue;
+    box-shadow: 5px 5px darkslategrey;
     border-radius: 2vw;
 }
 
