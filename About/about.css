@@ -75,7 +75,6 @@ header h1 {
 
 header img {
     border-radius: 20px;
-    /* box-shadow: 5px 5px darkslategray; */
     box-shadow: 6px 8px 16px 6px rgba(0, 0, 0, 0.20), 6px 12px 40px 6px rgba(0, 0, 0, 0.19);
 }
 
@@ -101,7 +100,8 @@ header h1 {
 }
 
 #about-me p,
-#about-me h3 {
+#about-me h3,
+#about-me ul {
     padding: 20px;
     margin: 20px 10%;
     background-color: #028090;

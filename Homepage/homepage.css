@@ -72,7 +72,6 @@ header h1 {
 
 header img {
     border-radius: 20px;
-    /* box-shadow: 5px 5px darkslategray; */
     box-shadow: 6px 8px 16px 6px rgba(0, 0, 0, 0.20), 6px 12px 40px 6px rgba(0, 0, 0, 0.19);
 }
 
@@ -90,7 +89,7 @@ header h1 {
     padding: 20px 0;
 }
 
-#p1-background {
+.p1-background {
     background-color:#02C39A;
     margin: 20px 0 20px 7%;
     padding: 0 11% 0 4%;
@@ -98,7 +97,7 @@ header h1 {
     box-shadow: 5px 5px darkslategrey;
 }
 
-#p2-background {
+.p2-background {
     background-color:#02C39A;
     margin: 20px 7% 20px 0;
     padding: 0 4% 0 11%;
@@ -106,15 +105,20 @@ header h1 {
     box-shadow: 5px 5px darkslategrey;
 }
 
-#p3-background {
+.h3-background {
     background-color:#02C39A;
-    margin: 20px 0 20px 7%;
-    padding: 0 11% 0 4%;
-    border-radius: 20px 0 0 20px;
+    margin: 20px 7% 20px 0;
+    padding: 0 4% 0 11%;
+    border-radius: 0 20px 20px 0;
     box-shadow: 5px 5px darkslategrey;
+    border-width: 5px 5px 5px 0;
+    border-color: lightblue;
+    border-style: solid;
 }
 
-.info p {
+.info p,
+ul,
+h3 {
     padding: 20px 0;
     color: aliceblue;
 }
