@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body { 
+    float: none !important;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 15px; 
+    background-color:aliceblue;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color:cadetblue;
+    font-size: 30px;
+}
+
+nav a {
+    display: inline-block;
+    color: aliceblue;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    background-color:darkcyan;
+    color: aliceblue;
+}
+
+nav a.active {
+    background-color:aliceblue;
+    color: cadetblue;
+}
+
+#home-nav,
+#projects-nav {
+    float: left;
+    padding: 5px 10px;
+}
+
+#number-nav {
+    float: right;
+    padding: 7.7px 10px;
+    font-size: 25px;
+}
+
+.container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
+
+h1 {
+    color: aliceblue;
+    font-size: 100px;
+    background-color:darkseagreen;
+    padding: 20px 0;
+    margin: 10px 0;
+}
+
+.button-container {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 20px 0;
+    margin: 20px 0;
+    width: 500px;
+    background-color: darkseagreen;
+    border-radius: 5px;
+    box-shadow: 3px 3px;
+}
+
+#value {
+    color: darkslategray;
+    font-size: 80px;
+    padding-top: 50px;
+}
+
+.btn {
+    font-size: 35px;
+    margin: 20px 5px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding: 0 5px;
+    border: 3px solid aliceblue;
+    box-shadow: 3px 3px black;
+}
+
+.btn:hover {
+    background-color:darkslategray;
+    cursor: pointer;
+    color: aliceblue;
+    border: 3px solid aliceblue;
+}
+
+footer {
+    background-color:cadetblue;
+    color:aliceblue;
+    font-size: 30px;
+    width: 100%;
+    min-height: 40px;
+    vertical-align: middle;
+    text-align: center;
+    padding: 5px 15px;
+    position: absolute;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 588px) {
+    footer {
+        font-size: 25px;
+    }
+}

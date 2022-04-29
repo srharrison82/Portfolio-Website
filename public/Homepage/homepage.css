@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+body { 
+    float: none !important;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 15px; 
+    background-color:#028090;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 95%;
+    margin: 0 2.5%;
+    background-color:#00A896;
+    text-align: center;
+    font-size: 30px;
+    color: aliceblue;
+    border-radius: 0 0 20px 20px;
+}
+
+nav a {
+    display: inline-block;
+    color: aliceblue;
+    text-decoration: none;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 5px;
+}
+
+nav a:hover {
+    background-color:#05668D;
+}
+
+nav a.active {
+    background-color:#028090;
+}
+
+@media only screen and (max-width: 640px) {
+    nav a {
+        margin: 0;
+        width: 130px;
+    }
+
+    nav {
+        font-size: 25px;
+    }
+}
+
+#img-h1-background {
+    background-image: url(../Images/homepage-heading.png);
+    background-size: cover;
+    background-position:left;
+}
+
+#img-h1 {
+    padding: 40px 5%;
+    margin: 40px 10% 0;
+}
+
+header img,
+header h1 {
+    display:inline-block;
+    vertical-align:middle;
+}
+
+header img {
+    border-radius: 20px;
+    box-shadow: 6px 8px 16px 6px rgba(0, 0, 0, 0.20), 6px 12px 40px 6px rgba(0, 0, 0, 0.19);
+}
+
+header h1 {
+    padding-left: 5%;
+    font-size: 6.5vw;
+    overflow-wrap:normal;
+    width: 50%;
+    height: 50%;
+    color: aliceblue;
+}
+
+.info {
+    background-color:aliceblue;
+    padding: 20px 0;
+}
+
+.p1-background {
+    background-color:#02C39A;
+    margin: 20px 0 20px 7%;
+    padding: 0 11% 0 4%;
+    border-radius: 20px 0 0 20px;
+    box-shadow: 5px 5px darkslategrey;
+}
+
+.p2-background {
+    background-color:#02C39A;
+    margin: 20px 7% 20px 0;
+    padding: 0 4% 0 11%;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 5px 5px darkslategrey;
+}
+
+.h3-background {
+    background-color:#02C39A;
+    margin: 20px 7% 20px 0;
+    padding: 0 4% 0 11%;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 5px 5px darkslategrey;
+    border-width: 5px 5px 5px 0;
+    border-color: lightblue;
+    border-style: solid;
+}
+
+.info p,
+ul,
+h3 {
+    padding: 20px 0;
+    color: aliceblue;
+}
+
+#flex-background {
+    background-image: url(../Images/flex-background.png);
+    background-size: cover;
+}
+
+#flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 4vw 10%;
+}
+
+#flex-container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 4vw 10%;
+}
+
+#project1 {
+    order: 1;
+    margin-right: 4vw;
+    box-shadow: 5px 5px darkslategrey;
+    border-radius: 2vw;
+}
+
+#project2 {
+    order: 2;
+    box-shadow: 5px 5px darkslategrey;
+    border-radius: 2vw;
+}
+
+#project3 {
+    order: 1;
+    box-shadow: 5px 5px darkslategrey;
+    border-radius: 2vw;
+}
+
+#project4 {
+    order: 2;
+    margin-left: 4vw;
+    box-shadow: 5px 5px darkslategrey;
+    border-radius: 2vw;
+}
+
+footer {
+    background-color:#00A896;
+    color:aliceblue;
+    font-size: 30px;
+    padding: 0 5%;
+    width: 95%;
+    margin: 0 2.5%;
+    border-radius: 20px 20px 0 0;
+}
+
+footer a {
+    text-decoration: none;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    color: aliceblue;
+    padding: 0 10px;
+}
+
+#back {
+    float: right;
+}
+
+footer p {
+    display:inline-block;
+    height: 40px;
+    line-height: 40px;
+}
+
+#email:hover {
+    text-decoration: underline;
+}
+
+#back:hover {
+    background-color:#05668D;
+    color: aliceblue;
+}
+
+@media only screen and (max-width: 880px) {
+    footer {
+        font-size: 20px;
+    }
+}
+
+  @media only screen and (max-width: 600px) {
+    footer {
+        font-size: 15px;
+    }
+}
