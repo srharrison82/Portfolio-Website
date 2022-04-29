@@ -27,6 +27,7 @@ nav {
     font-size: 30px;
     color: aliceblue;
     border-radius: 0 0 20px 20px;
+    z-index: 100;
 }
 
 nav a {
@@ -67,6 +68,35 @@ nav a.active {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+}
+
+#counter {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    box-shadow: 5px 5px darkslategrey;
+}
+
+#switch-blue {
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    box-shadow: 5px 5px darkslategrey;
+}
+
+#switch-grey {
+    position: absolute;
+    top: 0;
+    right: 10%;
+    box-shadow: 5px 5px darkslategrey;
+}
+
+#carousel {
+    position: absolute;
+    bottom: 0;
+    right: 20%;
+    box-shadow: 5px 5px darkslategrey;
 }
 
 #h1-background {
@@ -148,7 +178,7 @@ header h1 {
 
 .underline {
     height: 10px;
-    width: 80%;
+    width: 200px;
     background-color: darkslategrey;
     margin: 0 auto 40px;
     border-radius: 3px;
@@ -166,12 +196,15 @@ footer {
 
 footer a {
     text-decoration: none;
-    float: right;
     text-align: center;
     height: 40px;
     line-height: 40px;
     color: aliceblue;
     padding: 0 10px;
+}
+
+#back {
+    float: right;
 }
 
 footer p {
@@ -180,7 +213,11 @@ footer p {
     line-height: 40px;
 }
 
-footer a:hover {
+#email:hover {
+    text-decoration: underline;
+}
+
+#back:hover {
     background-color:#05668D;
     color: aliceblue;
 }
