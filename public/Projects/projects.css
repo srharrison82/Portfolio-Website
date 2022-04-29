@@ -59,6 +59,17 @@ nav a.active {
     }
 }
 
+@media only screen and (max-width: 480px) {
+    nav a {
+        margin: 0;
+        width: 90px;
+    }
+
+    nav {
+        font-size: 18px;
+    }
+}
+
 #h1-img {
     margin-top: 40px;
     padding: 40px 0;
@@ -231,5 +242,11 @@ footer p {
   @media only screen and (max-width: 600px) {
     footer {
         font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    footer {
+        font-size: 10px;
     }
 }

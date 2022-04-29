@@ -55,6 +55,17 @@ nav a.active {
     }
 }
 
+@media only screen and (max-width: 480px) {
+    nav a {
+        margin: 0;
+        width: 90px;
+    }
+
+    nav {
+        font-size: 18px;
+    }
+}
+
 #about-background {
     background-image: url(../Images/about-heading-background.png);
     background-size: cover;
@@ -183,5 +194,11 @@ header h1 {
   @media only screen and (max-width: 600px) {
     #footer-details {
         font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #footer-details {
+        font-size: 10px;
     }
 }
