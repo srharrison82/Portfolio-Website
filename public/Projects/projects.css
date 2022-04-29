@@ -48,7 +48,7 @@ nav a.active {
     background-color:#81c3c9;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (min-width: 481px) and (max-width: 640px) {
     nav a {
         margin: 0;
         width: 130px;
@@ -233,13 +233,13 @@ footer p {
     color: aliceblue;
 }
 
-@media only screen and (max-width: 880px) {
+@media only screen and (min-width: 600px) and (max-width: 880px) {
     footer {
         font-size: 20px;
     }
 }
 
-  @media only screen and (max-width: 600px) {
+@media only screen and (min-width: 481px) and (max-width: 600px) {
     footer {
         font-size: 15px;
     }
@@ -248,5 +248,8 @@ footer p {
 @media only screen and (max-width: 480px) {
     footer {
         font-size: 10px;
+    }
+    footer a {
+        padding: 0 5px;
     }
 }
