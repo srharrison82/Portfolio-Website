@@ -140,6 +140,13 @@ header h1 {
     box-shadow: 6px 8px 16px 6px rgba(0, 0, 0, 0.20), 6px 12px 40px 6px rgba(0, 0, 0, 0.19);
 }
 
+@media only screen and (max-width: 510px) {
+    .projects img {
+        width: 90%;
+        height: auto;
+    }
+}
+
 .projects-h2,
 .projects-p {
     padding: 20px 20px;
@@ -176,6 +183,13 @@ header h1 {
     border-color: aliceblue;
     border-style: solid;
     box-shadow: 5px 5px darkslategray;
+}
+
+@media only screen and (max-width: 510px) {
+    .projects a {
+        width: 90%;
+        font-size: 4vw;
+    }
 }
 
 .projects a:hover {

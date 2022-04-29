@@ -104,10 +104,11 @@ header h1 {
 }
 
 #about-me-background {
-    background-image: url(../Images/about-p-background.png);
-    background-position:center center;
-    background-repeat: repeat-y;
-    background-size: cover;
+    background:
+    radial-gradient(circle at 100% 50%, transparent 20%, #F0F3BD 21%, #F0F3BD 34%, transparent 35%, transparent),
+    radial-gradient(circle at 0% 50%, transparent 20%, #F0F3BD 21%, #F0F3BD 34%, transparent 35%, transparent) 0 -50px;
+    background-color: #81c3c9;
+    background-size:75px 100px;
 }
 
 #about-me p,
@@ -129,20 +130,30 @@ header h1 {
 
 #about-me {
     padding: 20px 0;
+    margin-bottom: 25vw;
 }
 
 #footer-info {
     position: relative;
-    background-image: url(../Images/lake.jpg);
     border-color: #F0F3BD;
     border-style: solid;
-    border-width: 5px 0 0 0;
-    height: 500px;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    width: auto;
-    max-width: 100%;
+    border-width: 10px 0 0 0;
+}
+
+#lake {
+    position: absolute;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 900px) {
+    #lake {
+        height: 300px;
+        width: auto;
+        left: -30%;
+    }
+    #about-me {
+        margin-bottom: 305px;
+    }
 }
 
 #footer-details {
