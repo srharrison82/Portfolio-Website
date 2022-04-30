@@ -62,11 +62,11 @@ nav a.active {
 @media only screen and (max-width: 480px) {
     nav a {
         margin: 0;
-        width: 90px;
+        width: 80px;
     }
-
+    
     nav {
-        font-size: 18px;
+        font-size: 15px;
     }
 }
 
@@ -220,7 +220,6 @@ footer {
 }
 
 footer a {
-    text-decoration: none;
     text-align: center;
     height: 40px;
     line-height: 40px;
@@ -230,6 +229,8 @@ footer a {
 
 #back {
     float: right;
+    text-decoration: none;
+    background-color:#05668D;
 }
 
 footer p {
@@ -243,7 +244,7 @@ footer p {
 }
 
 #back:hover {
-    background-color:#05668D;
+    background-color:#81c3c9;
     color: aliceblue;
 }
 

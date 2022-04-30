@@ -56,11 +56,11 @@ nav a.active {
 @media only screen and (max-width: 480px) {
     nav a {
         margin: 0;
-        width: 90px;
+        width: 80px;
     }
 
     nav {
-        font-size: 18px;
+        font-size: 15px;
     }
 }
 
@@ -118,11 +118,11 @@ header h1 {
 
 .h3-background {
     background-color:#02C39A;
-    margin: 20px 7% 20px 0;
-    padding: 0 4% 0 11%;
-    border-radius: 0 20px 20px 0;
+    margin: 20px 0 20px 7%;
+    padding: 0 11% 0 4%;
+    border-radius: 20px 0 0 20px;
     box-shadow: 5px 5px darkslategrey;
-    border-width: 5px 5px 5px 0;
+    border-width: 5px 0 5px 5px;
     border-color: lightblue;
     border-style: solid;
 }
@@ -190,7 +190,6 @@ footer {
 }
 
 footer a {
-    text-decoration: none;
     text-align: center;
     height: 40px;
     line-height: 40px;
@@ -200,6 +199,8 @@ footer a {
 
 #back {
     float: right;
+    background-color: #05668D;
+    text-decoration: none;
 }
 
 footer p {
@@ -213,7 +214,7 @@ footer p {
 }
 
 #back:hover {
-    background-color:#05668D;
+    background-color:#028090;
     color: aliceblue;
 }
 

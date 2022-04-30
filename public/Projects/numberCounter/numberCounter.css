@@ -30,6 +30,7 @@ nav a {
     color: aliceblue;
     text-decoration: none;
     margin: 0 10px;
+    height: 40px;
 }
 
 nav a:hover {
@@ -50,7 +51,7 @@ nav a.active {
 
 #number-nav {
     float: right;
-    padding: 7.7px 10px;
+    padding: 5px 10px;
     font-size: 25px;
 }
 
@@ -60,15 +61,15 @@ nav a.active {
     }
 
     nav {
-        font-size: 18px;
+        font-size: 15px;
     }
     #number-nav {
-        font-size: 18px;
-        padding: 5px 5px;
+        font-size: 15px;
+        padding: 10px 5px;
     }
     #home-nav,
     #projects-nav {
-        padding: 5px 5px;
+        padding: 10px 5px;
     }
 }
 
@@ -166,7 +167,6 @@ footer {
 }
 
 footer a {
-    text-decoration: none;
     text-align: center;
     height: 40px;
     line-height: 40px;

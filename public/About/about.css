@@ -58,11 +58,11 @@ nav a.active {
 @media only screen and (max-width: 480px) {
     nav a {
         margin: 0;
-        width: 90px;
+        width: 80px;
     }
 
     nav {
-        font-size: 18px;
+        font-size: 15px;
     }
 }
 
@@ -97,6 +97,9 @@ header h1 {
     left:50%;
     transform: translate(-50%, -50%);
     top:50%;
+    /* background-color: #81c3c9;
+    padding: 5px;
+    border-radius: 10px; */
 }
 
 #img2 {
@@ -130,37 +133,25 @@ header h1 {
 
 #about-me {
     padding: 20px 0;
-    margin-bottom: 25vw;
-}
-
-#footer-info {
-    position: relative;
-    border-color: #F0F3BD;
-    border-style: solid;
-    border-width: 10px 0 0 0;
+    margin-bottom: 40px;
 }
 
 #lake {
-    position: absolute;
-    bottom: 0;
     width: 100%;
     height: auto;
 }
 
-#footer-details {
-    position: absolute;
-    bottom: 0;
+footer {
     background-color:#00A896;
     color:aliceblue;
     font-size: 30px;
     padding: 0 5%;
     width: 95%;
-    margin: 0 2.5%;
+    margin: 40px 2.5% 0;
     border-radius: 20px 20px 0 0;
 }
 
-#footer-details a {
-    text-decoration: none;
+footer a {
     text-align: center;
     height: 40px;
     line-height: 40px;
@@ -170,6 +161,8 @@ header h1 {
 
 #back {
     float: right;
+    text-decoration: none;
+    background-color:#05668D;
 }
 
 #email:hover {
@@ -177,31 +170,32 @@ header h1 {
 }
 
 #back:hover {
-    background-color:#05668D;
-    color: aliceblue;
+    background-color:#F0F3BD;
+    color: #05668D;
 }
 
 @media only screen and (min-width: 611px) and (max-width: 880px) {
-    #footer-details {
+    footer {
         font-size: 20px;
     }
-    #footer-details a {
+    footer a {
         height: 30px;
         line-height: 30px;
     }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 610px) {
-    #footer-details {
+    footer {
         font-size: 15px;
     }
+
 }
 
 @media only screen and (max-width: 480px) {
-    #footer-details {
+    footer {
         font-size: 10px;
     }
-    #footer-details a {
+    footer a {
         padding: 0 5px;
     }
 }
