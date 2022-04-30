@@ -217,13 +217,13 @@ footer p {
     color: aliceblue;
 }
 
-@media only screen and (min-width: 601px) and (max-width: 880px) {
+@media only screen and (min-width: 611px) and (max-width: 880px) {
     footer {
         font-size: 20px;
     }
 }
 
-  @media only screen and (min-width: 481px) and (max-width: 600px) {
+@media only screen and (min-width: 481px) and (max-width: 610px) {
     footer {
         font-size: 15px;
     }

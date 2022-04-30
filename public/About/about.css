@@ -181,7 +181,7 @@ header h1 {
     color: aliceblue;
 }
 
-@media only screen and (min-width: 601px) and (max-width: 880px) {
+@media only screen and (min-width: 611px) and (max-width: 880px) {
     #footer-details {
         font-size: 20px;
     }
@@ -191,13 +191,9 @@ header h1 {
     }
 }
 
-  @media only screen and (min-width: 481px) and (max-width: 600px) {
+@media only screen and (min-width: 481px) and (max-width: 610px) {
     #footer-details {
         font-size: 15px;
-    }
-    #footer-details a {
-        height: 25px;
-        line-height: 25px;
     }
 }
 
@@ -207,7 +203,5 @@ header h1 {
     }
     #footer-details a {
         padding: 0 5px;
-        height: 20px;
-        line-height: 20px;
     }
 }
