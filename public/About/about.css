@@ -10,7 +10,6 @@ body {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     font-size: 15px; 
     background-color:#F0F3BD;
-    overflow-x: hidden;
 }
 
 nav {
@@ -144,17 +143,8 @@ header h1 {
 #lake {
     position: absolute;
     bottom: 0;
-}
-
-@media only screen and (max-width: 900px) {
-    #lake {
-        height: 300px;
-        width: auto;
-        left: -30%;
-    }
-    #about-me {
-        margin-bottom: 305px;
-    }
+    width: 100%;
+    height: auto;
 }
 
 #footer-details {
@@ -178,12 +168,6 @@ header h1 {
     padding: 0 10px;
 }
 
-#footer-details p {
-    display:inline-block;
-    height: 40px;
-    line-height: 40px;
-}
-
 #back {
     float: right;
 }
@@ -201,11 +185,19 @@ header h1 {
     #footer-details {
         font-size: 20px;
     }
+    #footer-details a {
+        height: 30px;
+        line-height: 30px;
+    }
 }
 
   @media only screen and (min-width: 481px) and (max-width: 600px) {
     #footer-details {
         font-size: 15px;
+    }
+    #footer-details a {
+        height: 25px;
+        line-height: 25px;
     }
 }
 
@@ -215,5 +207,7 @@ header h1 {
     }
     #footer-details a {
         padding: 0 5px;
+        height: 20px;
+        line-height: 20px;
     }
 }
