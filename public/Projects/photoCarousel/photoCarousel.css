@@ -133,6 +133,9 @@ button {
     .underline {
         width: 300px;
     }
+    .h2-container {
+        font-size: 25px;
+    }
 }
 
 #date {

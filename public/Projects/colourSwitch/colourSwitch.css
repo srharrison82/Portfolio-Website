@@ -92,10 +92,6 @@ h1 {
     height: 300px;
 }
 
-#content h2 {
-    margin: 20px;
-}
-
 .btn {
     font-size: 30px;
     color: aliceblue;
@@ -119,9 +115,10 @@ h1 {
 @media only screen and (max-width: 650px) {
     h1 {
         font-size: 80px;
+        padding: 0;
     }
     #content {
-        font-size: 20px;
+        font-size: 16px;
         height: 250px;
         width: 300px;
     }
