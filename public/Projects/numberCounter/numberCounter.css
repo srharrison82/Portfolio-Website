@@ -64,11 +64,11 @@ nav a.active {
     }
     #number-nav {
         font-size: 18px;
-        padding: 5px 0;
+        padding: 5px 5px;
     }
     #home-nav,
     #projects-nav {
-        padding: 5px 0;
+        padding: 5px 5px;
     }
 }
 
@@ -129,13 +129,29 @@ h1 {
         font-size: 80px;
     }
     .button-container {
+        width: 400px;
+    }
+    #value {
+        font-size: 40px;
+    }
+    .btn {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    h1 {
+        font-size: 60px;
+    }
+    .button-container {
         width: 300px;
     }
     #value {
         font-size: 40px;
     }
     .btn {
-        font-size: 30px;
+        font-size: 20px;
+        margin: 0 2px;
     }
 }
 

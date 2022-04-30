@@ -62,7 +62,7 @@ nav a.active {
     text-align: center;
 }
 
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 500px) {
     #home-nav {
         margin-right: 0;
     }
@@ -113,6 +113,26 @@ button {
 
 #location {
     font-size: 30px;
+}
+
+@media only screen and (max-width: 500px) {
+    .img-container img {
+        height: 200px;
+        width: 200px;
+    }
+    #location {
+        font-size: 20px;
+    }
+    .article-container {
+        width: 300px;
+
+    }
+    .underline {
+        width: 300px;
+    }
+    .container {
+        margin-top: 30%;
+    }
 }
 
 #date {
