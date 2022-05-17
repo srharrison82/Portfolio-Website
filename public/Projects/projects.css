@@ -96,7 +96,7 @@ nav a.active {
     box-shadow: 5px 5px darkslategrey;
 }
 
-#switch-grey {
+#nav {
     position: absolute;
     top: 0;
     right: 10%;
