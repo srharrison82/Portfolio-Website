@@ -163,12 +163,16 @@ header h1 {
     border-color: aliceblue;
 }
 
-.click {
+.github {
+    color: white;
+}
+
+.click-container {
     width: 100%;
     text-align: center;
 }
 
-.projects a {
+.click {
     text-decoration: none;
     color: #02C39A;
     font-size: 25px;
@@ -186,13 +190,13 @@ header h1 {
 }
 
 @media only screen and (max-width: 510px) {
-    .projects a {
+    .click {
         width: 90%;
         font-size: 4vw;
     }
 }
 
-.projects a:hover {
+.click:hover {
     background-color: #02C39A;
     color: aliceblue; 
     border-radius: 20px;
