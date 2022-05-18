@@ -167,6 +167,12 @@ header h1 {
     color: white;
 }
 
+@media only screen and (max-width: 510px) {
+    .github {
+        font-size: 12px;
+    }
+}
+
 .click-container {
     width: 100%;
     text-align: center;
