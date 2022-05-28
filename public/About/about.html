@@ -10,10 +10,20 @@
 
   <body>
     <header>
-      <nav>
-        <a href="../index.html">Home</a>
-        <a class="active" href="./about.html">About Me</a>
-        <a href="../Projects/projects.html">Projects</a>
+      <nav class="navbar">
+        <div class="brand">Samuel Harrison</div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="links">
+          <ul>
+            <li><a  href="../index.html">Home</a></li>
+            <li><a class="current" href="#">About</a></li>
+            <li><a href="../Projects/projects.html">Projects</a></li>
+          </ul>
+        </div>
       </nav>
 
       <div id="about-background" id="top">
@@ -101,9 +111,11 @@
           </ul>
         </div>
       </div>
-      <div>
-        <img id="lake" src="../Images/lake.jpg" alt="lake" />
-      </div>
+      
+      <img id="lake" src="../Images/lake.jpg" alt="lake" />
+      
+
+      <script type="text/javascript" src="./about.js"></script>
     </main>
 
     <footer>
