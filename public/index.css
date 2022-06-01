@@ -176,19 +176,19 @@ h3 {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin: 4vw 10%;
+    margin: 40px 10%;
 }
 
 #flex-container2 {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    margin: 4vw 10%;
+    margin: 40px 10%;
 }
 
 #project1 {
     order: 1;
-    margin-right: 4vw;
+    margin-right: 80px;
     box-shadow: 5px 5px darkslategrey;
     border-radius: 2vw;
 }
@@ -207,7 +207,7 @@ h3 {
 
 #project4 {
     order: 2;
-    margin-left: 4vw;
+    margin-left: 80px;
     box-shadow: 5px 5px darkslategrey;
     border-radius: 2vw;
 }
