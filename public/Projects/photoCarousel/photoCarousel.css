@@ -152,8 +152,8 @@ button {
 
 @media only screen and (max-width: 500px) {
     .img-container img {
-        height: 200px;
-        width: 200px;
+        height: 100px;
+        width: 100px;
     }
     #location {
         font-size: 20px;
