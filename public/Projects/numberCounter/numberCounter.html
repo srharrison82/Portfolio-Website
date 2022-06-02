@@ -10,16 +10,27 @@
 
   <body id="top">
     <header>
-      <nav>
-        <a href="../../index.html" id="home-nav">Home</a>
-        <a href="../projects.html#counter-link" id="projects-nav">Projects</a>
-        <a class="active" href="./numberCounter.html" id="number-nav">Number Counter</a>
-      </nav>
+      <nav class="navbar">
+        <div class="brand">Number Counter</div>
+
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+
+        <div class="links">
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../About/about.html">About</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
     </header>
 
     <main>
         <div class="container">
-            <h1>Number Counter</h1>
             <span id="value">0</span>
             <div class="button-container">
                 <button class="btn decrease">Decrease</button>
@@ -32,8 +43,10 @@
     </main>
 
     <footer>
-      <a href="mailto:srharrison82@gmail.com?subject=subject text" id="email">srharrison82@gmail.com</a>
-      <a id="number" href="tel:07586653620">07586653620</a>
+      <ul>
+        <li><a href="mailto:srharrison82@gmail.com?subject=subject text" id="email">srharrison82@gmail.com</a></li>
+        <li><a id="number" href="tel:07586653620">07586653620</a></li>
+      </ul>
     </footer>
   </body>
 </html>

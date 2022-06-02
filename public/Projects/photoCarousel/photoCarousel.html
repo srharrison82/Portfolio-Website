@@ -10,20 +10,27 @@
 
   <body id="top">
     <header>
-      <nav>
-        <a href="../../index.html" id="home-nav">Home</a>
-        <a href="../projects.html#carousel-link" id="projects-nav">Projects</a>
-        <a class="active" href="./photoCarousel.html" id="photo-nav">Photo Carousel</a>
-      </nav>
+      <nav class="navbar">
+        <div class="brand">Photo Carousel</div>
+
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+
+        <div class="links">
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../About/about.html">About</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
     </header>
 
     <main>
       <section class="container">
-        <div class="h2-container">
-          <h2>Photo Carousel</h2>
-          <div class="underline"></div>
-        </div>
-
         <article class="article-container">
           <div class="img-container">
             <img src="../../Images/me1.jpeg" id="location-img" />
@@ -48,8 +55,10 @@
     </main>
 
     <footer>
-      <a href="mailto:srharrison82@gmail.com?subject=subject text" id="email">srharrison82@gmail.com</a>
-      <a id="number" href="tel:07586653620">07586653620</a>
+      <ul>
+        <li><a href="mailto:srharrison82@gmail.com?subject=subject text" id="email">srharrison82@gmail.com</a></li>
+        <li><a id="number" href="tel:07586653620">07586653620</a></li>
+      </ul>
     </footer>
   </body>
 </html>

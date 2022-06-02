@@ -1,3 +1,15 @@
+//Nav
+
+const toggleButton = document.getElementsByClassName("toggle-button")[0];
+const links = document.getElementsByClassName("links")[0];
+
+toggleButton.addEventListener("click", function () {
+  links.classList.toggle("active");
+});
+
+
+//Counter 
+
 let count = 0; 
 
 const value = document.querySelector('#value');

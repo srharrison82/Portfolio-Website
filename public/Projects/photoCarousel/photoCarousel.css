@@ -9,53 +9,88 @@ body {
     float: none !important;
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     font-size: 15px; 
-    background-color:aliceblue;
+    background-color:#dad7cd;
 }
 
-nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color:#414833;
-    font-size: 30px;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #414833;
+    color: white;
 }
 
-nav a {
-    display: inline-block;
-    color: aliceblue;
+.brand {
+    font-size: 24px;
+    margin: 11px; /*Cannot work out where 4px are coming from, hence 11px instead of 13px*/
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar li a {
     text-decoration: none;
-    padding: 5px 10px;
-    margin: 0 10px;
-    height: 40px;
+    padding: 0 15px;
+    display: block;
+    line-height: 50px;
+    color: white;
 }
 
-nav a:hover {
-    background-color:#656d4a;
-    color: aliceblue;
+.navbar li a:hover {
+    background-color: #dad7cd;
+    color: #414833;
 }
 
-nav a.active {
-    background-color:aliceblue;
-    color: #656d4a;
+.toggle-button {
+    position: absolute;
+    top: 12.5px;
+    right: 16px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 32px;
+    height: 25px;
 }
 
-#home-nav,
-#projects-nav {
-    float: left;
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
 }
 
-#photo-nav {
-    float: right;
-}
-
-@media only screen and (max-width: 500px) {
-    nav a {        
-        width: auto;
-        padding: 10px 10px;
+@media (max-width: 450px) {
+    .toggle-button {
+        display: flex;
     }
-
-    nav {
-        font-size: 15px;
+    .links {
+        display: none;
+        width: 100%;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .links ul {
+        flex-direction: column;
+        width: 100%;
+        background-color: #414833;
+    }
+    .links li {
+        text-align: center;
+    }
+    .links li a {
+        line-height: 30px;
+    }
+    .links.active {
+        display: flex;
     }
 }
 
@@ -76,18 +111,6 @@ nav a.active {
         margin: 0;
     }
   }
-
-.h2-container {
-    font-size: 30px;
-}
-
-.underline {
-    height: 10px;
-    width: 330px;
-    background-color: #a68a64;
-    margin: 0 auto 10px;
-    border-radius: 3px;
-}
 
 .article-container {
     border-radius: 30px;
@@ -114,6 +137,13 @@ button {
     border-radius: 30%;
     object-fit: cover;
     border: 3px solid #582f0e;
+}
+
+@media (max-height: 670px) {
+    .img-container img {
+        height: 100px;
+        width: 100px;
+    }
 }
 
 #location {
@@ -168,32 +198,32 @@ button {
 }
 
 footer {
-    background-color:#414833;
-    font-size: 30px;
-    padding: 0 5%;
-    width: 100%;
+    background-color: #414833;
+    color: white;
     position: absolute;
     bottom: 0;
-    text-align: center;
+    width: 100%;
 }
 
-footer a {
-    text-align: center;
-    height: 40px;
-    line-height: 40px;
-    color: aliceblue;
-    padding: 0 10px;
+footer ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
-#email:hover {
+footer li {
+    list-style: none;
+}
+
+footer li a {
+    text-decoration: none;
+    color: white;
+    padding: 16px;
+    display: block;
+}
+
+footer li a:hover {
     text-decoration: underline;
-}
-
-@media only screen and (max-width: 650px) {
-    footer {
-        font-size: 15px;
-    }
-    footer a {
-        padding: 0 5px;
-    }
 }

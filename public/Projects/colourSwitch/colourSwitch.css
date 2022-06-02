@@ -17,50 +17,85 @@ body {
     background-color:#485262;
 }
 
-nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color:aliceblue;
-    font-size: 30px;
-}
-
-nav a {
-    display: inline-block;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
     color: #05668D;
+}
+
+.brand {
+    font-size: 24px;
+    margin: 11px; /*Cannot work out where 4px are coming from, hence 11px instead of 13px*/
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar li a {
     text-decoration: none;
-    padding: 5px 10px;
-    margin: 0 10px;
-    height: 40px;
+    padding: 0 15px;
+    display: block;
+    line-height: 50px;
+    color: #05668D;
 }
 
-nav a:hover {
-    background-color:#59d2fe;
-    color: aliceblue;
+.navbar li a:hover {
+    background-color: #05668D;
+    color: white;
 }
 
-nav a.active {
-    background-color:#485262;
-    color: aliceblue;
+.toggle-button {
+    position: absolute;
+    top: 12.5px;
+    right: 16px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 32px;
+    height: 25px;
 }
 
-#home-nav,
-#projects-nav {
-    float: left;
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #05668D;
+    border-radius: 10px;
 }
 
-#colour-nav {
-    float: right;
-}
-
-@media only screen and (max-width: 500px) {
-    nav a {        
-        width: auto;
-        padding: 10px 5px;
+@media (max-width: 450px) {
+    .toggle-button {
+        display: flex;
     }
-
-    nav {
-        font-size: 15px;
+    .links {
+        display: none;
+        width: 100%;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .links ul {
+        flex-direction: column;
+        width: 100%;
+        background-color: white;
+    }
+    .links li {
+        text-align: center;
+    }
+    .links li a {
+        line-height: 30px;
+    }
+    .links.active {
+        display: flex;
     }
 }
 
@@ -77,13 +112,6 @@ header {
     width: 500px;
 }
 
-h1 {
-    display: inline-block;
-    padding: 20px;
-    color: aliceblue;
-    font-size: 100px;
-}
-
 #content {
     font-size: 30px;
     color: #05668D;
@@ -92,6 +120,10 @@ h1 {
     border-radius: 1vw;
     width: 500px;
     height: 300px;
+}
+
+h2 {
+    padding-top: 30px;
 }
 
 .btn {
@@ -115,17 +147,13 @@ h1 {
 }
 
 @media only screen and (max-width: 650px) {
-    h1 {
-        font-size: 80px;
-        padding: 0;
-    }
     #content {
         font-size: 16px;
         height: 250px;
         width: 300px;
     }
     #content h2 {
-        padding-top: 10px;
+        padding-top: 20px;
     }
     #container {
         width: 300px;
@@ -133,32 +161,32 @@ h1 {
 }
 
 footer {
-    background-color:aliceblue;
-    font-size: 30px;
-    padding: 0 5%;
-    width: 100%;
+    background-color: white;
+    color: #05668D;
     position: absolute;
     bottom: 0;
-    text-align: center;
+    width: 100%;
 }
 
-footer a {
-    text-align: center;
-    height: 40px;
-    line-height: 40px;
+footer ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+footer li {
+    list-style: none;
+}
+
+footer li a {
+    text-decoration: none;
     color: #05668D;
-    padding: 0 10px;
+    padding: 16px;
+    display: block;
 }
 
-#email:hover {
+footer li a:hover {
     text-decoration: underline;
-}
-
-@media only screen and (max-width: 650px) {
-    footer {
-        font-size: 15px;
-    }
-    footer a {
-        padding: 0 5px;
-    }
 }

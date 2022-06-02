@@ -14,80 +14,99 @@ body {
     float: none !important;
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     font-size: 15px; 
-    background-color:aliceblue;
+    background-color:darkseagreen;
 }
 
-nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color:cadetblue;
-    font-size: 30px;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: cadetblue;
+    color: white;
 }
 
-nav a {
-    display: inline-block;
-    color: aliceblue;
+.brand {
+    font-size: 24px;
+    margin: 11px; /*Cannot work out where 4px are coming from, hence 11px instead of 13px*/
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar li a {
     text-decoration: none;
-    margin: 0 10px;
-    height: 40px;
+    padding: 0 15px;
+    display: block;
+    line-height: 50px;
+    color: white;
 }
 
-nav a:hover {
-    background-color:darkcyan;
-    color: aliceblue;
+.navbar li a:hover {
+    background-color: darkseagreen;
+    color: white;
 }
 
-nav a.active {
-    background-color:aliceblue;
-    color: cadetblue;
+.toggle-button {
+    position: absolute;
+    top: 12.5px;
+    right: 16px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 32px;
+    height: 25px;
 }
 
-#home-nav,
-#projects-nav {
-    float: left;
-    padding: 5px 10px;
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
 }
 
-#number-nav {
-    float: right;
-    padding: 5px 10px;
-    font-size: 25px;
-}
-
-@media only screen and (max-width: 500px) {
-    nav a {        
-        width: auto;
+@media (max-width: 450px) {
+    .toggle-button {
+        display: flex;
     }
-
-    nav {
-        font-size: 15px;
+    .links {
+        display: none;
+        width: 100%;
     }
-    #number-nav {
-        font-size: 15px;
-        padding: 10px 5px;
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
     }
-    #home-nav,
-    #projects-nav {
-        padding: 10px 5px;
+    .links ul {
+        flex-direction: column;
+        width: 100%;
+        background-color: cadetblue;
+    }
+    .links li {
+        text-align: center;
+    }
+    .links li a {
+        line-height: 30px;
+    }
+    .links.active {
+        display: flex;
     }
 }
 
 .container {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     width: 100%;
-}
-
-h1 {
-    color: aliceblue;
-    font-size: 100px;
-    background-color:darkseagreen;
-    padding: 20px 0;
-    margin: 10px 0;
+    height: 250px;
 }
 
 .button-container {
@@ -95,34 +114,33 @@ h1 {
     left: 50%;
     transform: translate(-50%, 0);
     padding: 20px 0;
-    margin: 20px 0;
     width: 500px;
-    background-color: darkseagreen;
+    background-color: white;
     border-radius: 5px;
     box-shadow: 3px 3px;
 }
 
 #value {
-    color: darkslategray;
+    color: white;
     font-size: 80px;
-    padding-top: 50px;
 }
 
 .btn {
     font-size: 35px;
     margin: 20px 5px;
-    background-color: aliceblue;
+    background-color: darkslategray;
     border-radius: 5px;
     padding: 0 5px;
-    border: 3px solid aliceblue;
+    border: 3px solid darkslategray;
     box-shadow: 3px 3px black;
+    color: white;
 }
 
 .btn:hover {
     background-color:darkslategray;
     cursor: pointer;
     color: aliceblue;
-    border: 3px solid aliceblue;
+    border: 3px solid darkseagreen;
 }
 
 @media only screen and (max-width: 650px) {
@@ -157,32 +175,32 @@ h1 {
 }
 
 footer {
-    background-color:cadetblue;
-    font-size: 30px;
-    padding: 0 5%;
-    width: 100%;
+    background-color: cadetblue;
+    color: white;
     position: absolute;
     bottom: 0;
-    text-align: center;
+    width: 100%;
 }
 
-footer a {
-    text-align: center;
-    height: 40px;
-    line-height: 40px;
-    color: aliceblue;
-    padding: 0 10px;
+footer ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
-#email:hover {
+footer li {
+    list-style: none;
+}
+
+footer li a {
+    text-decoration: none;
+    color: white;
+    padding: 16px;
+    display: block;
+}
+
+footer li a:hover {
     text-decoration: underline;
-}
-
-@media only screen and (max-width: 650px) {
-    footer {
-        font-size: 15px;
-    }
-    footer a {
-        padding: 0 5px;
-    }
 }

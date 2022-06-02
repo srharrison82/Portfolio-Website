@@ -1,3 +1,15 @@
+//Nav
+
+const toggleButton = document.getElementsByClassName("toggle-button")[0];
+const links = document.getElementsByClassName("links")[0];
+
+toggleButton.addEventListener("click", function () {
+  links.classList.toggle("active");
+});
+
+
+//Colour Switch
+
 const hex = [1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F'];
 
 const btn = document.getElementById('btn');
