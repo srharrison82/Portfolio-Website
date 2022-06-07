@@ -37,10 +37,10 @@
               height="45%"
             />
             <img
-              id="switch-blue"
+              id="switch"
               src="../Images/switch.png"
-              alt="switch-blue"
-              height="45%"
+              alt="switch"
+              height="60%"
             />
             <img id="nav" src="../Images/nav.png" alt="nav" height="45%" />
             <img
@@ -49,6 +49,7 @@
               alt="carousel"
               height="45%"
             />
+            <img id="todo" src="../Images/toDo.png" alt="todo" height="45%" />
           </div>
         </div>
 
@@ -59,130 +60,140 @@
     </header>
 
     <main>
-      <div class="projects" id="colour-link">
-        <img src="../Images/switch-square.png" alt="Colour Switch" />
+      <div class="proj-background">
+        <div class="projects" id="colour-link">
+          <img src="../Images/switch-square.png" alt="Colour Switch" />
 
-        <h2 class="projects-h2">Colour Switch</h2>
+          <h2 class="projects-h2">Colour Switch</h2>
 
-        <p class="projects-p">
-          This project is a simple colour switcher. The premise is to provide a
-          button which will change the hex colour at random. In order to do
-          this, I needed to use the built in Math.random and Math.floor
-          functions to loop through an array of the 6 HEX digits.
-        </p>
+          <p class="projects-p">
+            This project is a simple colour switcher. The premise is to provide a
+            button which will change the hex colour at random. In order to do
+            this, I needed to use the built in Math.random and Math.floor
+            functions to loop through an array of the 6 HEX digits.
+          </p>
 
-        <p class="projects-p">
-          <a class="github" href="https://github.com/srharrison82/colourSwitch"
-            >github.com/srharrison82/colourSwitch</a
-          >
-        </p>
+          <p class="projects-p">
+            <a class="github" href="https://github.com/srharrison82/colourSwitch"
+              >github.com/srharrison82/colourSwitch</a
+            >
+          </p>
 
-        <div class="click-container">
-          <a class="click" href="./colourSwitch/colourSwitch.html"
-            >Click me to see the project!</a
-          >
+          <div class="click-container">
+            <a class="click" href="./colourSwitch/colourSwitch.html"
+              >Click me to see the project!</a
+            >
+          </div>
         </div>
       </div>
 
       <div class="underline"></div>
 
-      <div class="projects" id="counter-link">
-        <img src="../Images/counter-square.png" alt="Number Counter" />
+      <div class="proj-background">
+        <div class="projects" id="counter-link">
+          <img src="../Images/counter-square.png" alt="Number Counter" />
 
-        <h2 class="projects-h2">Number Counter</h2>
+          <h2 class="projects-h2">Number Counter</h2>
 
-        <p class="projects-p">
-          Number Counter uses 3 buttons - reset, decrease and increase. An
-          if/else statement allows the buttons to increment or decrement each
-          time a 'click' event occurs on which ever button. Thus, the amount on
-          the screen changes each time.
-        </p>
+          <p class="projects-p">
+            Number Counter uses 3 buttons - reset, decrease and increase. An
+            if/else statement allows the buttons to increment or decrement each
+            time a 'click' event occurs on which ever button. Thus, the amount on
+            the screen changes each time.
+          </p>
 
-        <p class="projects-p">
-          <a class="github" href="https://github.com/srharrison82/numberCounter"
-            >github.com/srharrison82/numberCounter</a
-          >
-        </p>
+          <p class="projects-p">
+            <a class="github" href="https://github.com/srharrison82/numberCounter"
+              >github.com/srharrison82/numberCounter</a
+            >
+          </p>
 
-        <div class="click-container">
-          <a class="click" href="./numberCounter/numberCounter.html"
-            >Click me to see the project!</a
-          >
+          <div class="click-container">
+            <a class="click" href="./numberCounter/numberCounter.html"
+              >Click me to see the project!</a
+            >
+          </div>
+        </div>
+      </div>
+      
+      <div class="underline"></div>
+
+      <div class="proj-background">
+        <div class="projects" id="carousel-link">
+          <img src="../Images/carousel-square.png" alt="Photo Carousel" />
+
+          <h2 class="projects-h2">Photo Carousel</h2>
+
+          <p class="projects-p">
+            This simple carousel of photos uses 3 buttons - previous, next or
+            random. The concept is that each time a button is clicked, a related
+            function will be triggered to increment or decrement the id of the
+            photo. This then also accesses the showPhoto function, to allow the
+            other linked information to change each time with the photo.
+          </p>
+
+          <p class="projects-p">
+            <a class="github" href="https://github.com/srharrison82/photoCarousel"
+              >github.com/srharrison82/photoCarousel</a
+            >
+          </p>
+
+          <div class="click-container">
+            <a class="click" href="./photoCarousel/photoCarousel.html"
+              >Click me to see the project!</a
+            >
+          </div>
         </div>
       </div>
 
       <div class="underline"></div>
 
-      <div class="projects" id="carousel-link">
-        <img src="../Images/carousel-square.png" alt="Photo Carousel" />
+      <div class="proj-background">
+        <div class="projects" id="responsive-nav">
+          <img src="../Images/nav-square.png" alt="Responsive Nav" />
 
-        <h2 class="projects-h2">Photo Carousel</h2>
+          <h2 class="projects-h2">Responsive Nav</h2>
 
-        <p class="projects-p">
-          This simple carousel of photos uses 3 buttons - previous, next or
-          random. The concept is that each time a button is clicked, a related
-          function will be triggered to increment or decrement the id of the
-          photo. This then also accesses the showPhoto function, to allow the
-          other linked information to change each time with the photo.
-        </p>
+          <p class="projects-p">
+            The responsive nav-bar uses flexbox tools to hide and access the links
+            within the nav, so that it can then push them below in column form.
+            This is useful to save space and is allowed to happen through the use
+            of the button which appears when the screen is below 450px in width.
+          </p>
 
-        <p class="projects-p">
-          <a class="github" href="https://github.com/srharrison82/photoCarousel"
-            >github.com/srharrison82/photoCarousel</a
-          >
-        </p>
+          <p class="projects-p">
+            <a class="github" href="https://github.com/srharrison82/responsiveNav"
+              >github.com/srharrison82/responsiveNav</a
+            >
+          </p>
 
-        <div class="click-container">
-          <a class="click" href="./photoCarousel/photoCarousel.html"
-            >Click me to see the project!</a
-          >
+          <div class="click-container">
+            <a class="click" href="./responsiveNav/index.html"
+              >Click me to see the project!</a
+            >
+          </div>
         </div>
       </div>
 
       <div class="underline"></div>
 
-      <div class="projects" id="responsive-nav">
-        <img src="../Images/nav-square.png" alt="Responsive Nav" />
+      <div class="proj-background">
+        <div class="projects" id="toDoList">
+          <img src="../Images/toDo-square.png" alt="To Do List" />
 
-        <h2 class="projects-h2">Responsive Nav</h2>
+          <h2 class="projects-h2">To-Do List</h2>
 
-        <p class="projects-p">
-          The responsive nav-bar uses flexbox tools to hide and access the links
-          within the nav, so that it can then push them below in column form.
-          This is useful to save space and is allowed to happen through the use
-          of the button which appears when the screen is below 450px in width.
-        </p>
+          <p class="projects-p">
+            This To-Do List was made by using event listeners. This allows the user input to be registered by the code, so that when the addition button is clicked a new paragraph is created below. This is where the new information is stored, which can also be crossed out with one click, and removed with a double click.
+          </p>
 
-        <p class="projects-p">
-          <a class="github" href="https://github.com/srharrison82/responsiveNav"
-            >github.com/srharrison82/responsiveNav</a
-          >
-        </p>
+          <p class="projects-p">
+            <a class="github" href="https://github.com/srharrison82/toDo">github.com/srharrison82/toDO</a>
+          </p>
 
-        <div class="click-container">
-          <a class="click" href="./responsiveNav/index.html"
-            >Click me to see the project!</a
-          >
-        </div>
-      </div>
-
-      <div class="underline"></div>
-
-      <div class="projects" id="toDoList">
-        <img src="../Images/toDo-square.png" alt="To Do List" />
-
-        <h2 class="projects-h2">To-Do List</h2>
-
-        <p class="projects-p">
-          This To-Do List was made by using event listeners. This allows the user input to be registered by the code, so that when the addition button is clicked a new paragraph is created below. This is where the new information is stored, which can also be crossed out with one click, and removed with a double click.
-        </p>
-
-        <p class="projects-p">
-          <a class="github" href="https://github.com/srharrison82/toDo">github.com/srharrison82/toDO</a>
-        </p>
-
-        <div class="click-container">
-          <a class="click" href="./toDo/toDo.html">Click me to see the project!</a>
+          <div class="click-container">
+            <a class="click" href="./toDo/toDo.html">Click me to see the project!</a>
+          </div>
         </div>
       </div>
 
