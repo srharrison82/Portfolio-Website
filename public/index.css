@@ -178,9 +178,13 @@ h3 {
 #flex-container img {
     height: 250px;
     width: 250px;
-    margin: 20px;
+    
     box-shadow: 5px 5px darkslategrey;
     border-radius: 2vw;
+}
+
+#flex-container a {
+    margin: 20px;
 }
 
 #project1 {
