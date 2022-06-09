@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./photoSwapper.css"/>
+    <title>Photo Swapper</title>
+  </head>
+
+  <body id="top">
+    <header>
+      <nav class="navbar">
+        <div class="brand">Photo Swapper</div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="links">
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../About/about.html">About</a></li>
+            <li><a href="../projects.html">Projects</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div id="heading-img">
+        <div>
+          <img id="image1" src="../../Images/image1.jpeg" onclick="image1Swap()" class="click"/>
+          <img id="image2" src="../../Images/image2.jpeg" onclick="image2Swap()" class="click"/>
+          <img id="image3" src="../../Images/image3.jpeg" onclick="image3Swap()" class="click"/>
+          <img id="image4" src="../../Images/image4.jpeg" onclick="image4Swap()" class="click"/>
+          <img id="image5" src="../../Images/image5.jpeg" onclick="image5Swap()" class="click"/>
+        </div>
+      </div>
+
+      <script type="text/javascript" src="./photoSwapper.js"></script>
+    </main>
+
+    <footer>
+      <ul>
+        <li><a href="mailto:srharrison82@gmail.com?subject=subject text" id="email">srharrison82@gmail.com</a></li>
+        <li><a id="number" href="tel:07586653620">07586653620</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
