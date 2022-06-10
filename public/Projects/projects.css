@@ -113,13 +113,6 @@ body {
     margin-top: 40px;
 }
 
-.clicked {
-    object-fit: cover;
-    cursor: pointer;
-    height: 200px;
-
-}
-
 #heading-background {
     background-color: #028090;
     height: 300px;
@@ -146,10 +139,7 @@ body {
     bottom: 0;
     left: 15%;
     box-shadow: 5px 5px darkslategrey;
-}
-
-#image2:hover {
-    filter: brightness(120%);
+    height: 200px;
 }
 
 #image3 {
@@ -157,10 +147,7 @@ body {
     top: 0;
     right: 15%;
     box-shadow: 5px 5px darkslategrey;
-}
-
-#image3:hover {
-    filter: brightness(120%);
+    height: 200px;
 }
 
 #image4 {
@@ -168,10 +155,7 @@ body {
     bottom: 0;
     right: 15%;
     box-shadow: 5px 5px darkslategrey;
-}
-
-#image4:hover {
-    filter: brightness(120%);
+    height: 200px;
 }
 
 #image5 {
@@ -179,14 +163,14 @@ body {
     top: 0;
     left: 15%;
     box-shadow: 5px 5px darkslategrey;
-}
-
-#image5:hover {
-    filter: brightness(120%);
+    height: 200px;
 }
 
 @media (max-width: 1180px) {
-    .clicked {
+    #image2,
+    #image3,
+    #image4,
+    #image5 {
         height: 18vw;
     }
     #image1 {
