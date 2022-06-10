@@ -108,55 +108,103 @@ body {
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    height: 500px;
+    height: 440px;
     width: 100%;
+    margin-top: 40px;
 }
 
-#todo {
+.clicked {
+    object-fit: cover;
+    cursor: pointer;
+    height: 200px;
+
+}
+
+#heading-background {
+    background-color: #028090;
+    height: 300px;
+    width: 100%;
     position: absolute;
-    top: 0;
-    left: 20%;
-    box-shadow: 5px 5px darkslategrey;
-    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
 }
 
-#counter {
-    position: absolute;
-    bottom: 0;
-    left: 10%;
-    box-shadow: 5px 5px darkslategrey;
-    z-index: 10;
-}
-
-#nav {
-    position: absolute;
-    top: 0;
-    right: 10%;
-    box-shadow: 5px 5px darkslategrey;
-    z-index: 10;
-}
-
-#swapper {
-    position: absolute;
-    bottom: 0;
-    right: 20%;
-    box-shadow: 5px 5px darkslategrey;
-    z-index: 10;
-}
-
-#switch {
+#image1 {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 6px 8px 16px 6px rgba(0, 0, 0, 0.20), 6px 12px 40px 6px rgba(0, 0, 0, 0.19);
-    z-index: 100;
+    z-index: 1;
+    height: 250px;
+}
+
+#image2 {
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    box-shadow: 5px 5px darkslategrey;
+}
+
+#image2:hover {
+    filter: brightness(120%);
+}
+
+#image3 {
+    position: absolute;
+    top: 0;
+    right: 15%;
+    box-shadow: 5px 5px darkslategrey;
+}
+
+#image3:hover {
+    filter: brightness(120%);
+}
+
+#image4 {
+    position: absolute;
+    bottom: 0;
+    right: 15%;
+    box-shadow: 5px 5px darkslategrey;
+}
+
+#image4:hover {
+    filter: brightness(120%);
+}
+
+#image5 {
+    position: absolute;
+    top: 0;
+    left: 15%;
+    box-shadow: 5px 5px darkslategrey;
+}
+
+#image5:hover {
+    filter: brightness(120%);
+}
+
+@media (max-width: 1180px) {
+    .clicked {
+        height: 18vw;
+    }
+    #image1 {
+        height: 25vw;
+    }
+    #heading-img {
+        height: 40vw;
+    }
+    #heading-background {
+        height: 30vw;
+    }
 }
 
 #h1-background {
     background-color: aliceblue;
     width: 100%;
     height: 120px;
+    margin-bottom: 40px;
 }
 
 header h1 {

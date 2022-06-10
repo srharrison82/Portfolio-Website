@@ -26,35 +26,17 @@
         </div>
       </nav>
 
-      <div id="h1-img" id="top">
-        <div id="heading-img">
-          <div>
-            <img
-              id="counter"
-              src="../Images/counter.png"
-              alt="counter"
-              height="45%"
-            />
-            <img
-              id="switch"
-              src="../Images/switch.png"
-              alt="switch"
-              height="60%"
-            />
-            <img id="nav" src="../Images/nav.png" alt="nav" height="45%" />
-            <img
-              id="swapper"
-              src="../Images/photoSwapper.png"
-              alt="swapper"
-              height="45%"
-            />
-            <img id="todo" src="../Images/toDo.png" alt="todo" height="45%" />
-          </div>
-        </div>
+      <div id="heading-img" id="top">
+        <div id="heading-background"></div>
+        <img id="image1" src="./nav.png" onclick="image1Swap()" class="clicked"/>
+        <img id="image2" src="./toDo.png" onclick="image2Swap()" class="clicked"/>
+        <img id="image3" src="./counter.png" onclick="image3Swap()" class="clicked"/>
+        <img id="image4" src="./photoSwapper.png" onclick="image4Swap()" class="clicked"/>
+        <img id="image5" src="./switch.png" onclick="image5Swap()" class="clicked"/>
+      </div>
 
-        <div id="h1-background">
-          <h1>Projects</h1>
-        </div>
+      <div id="h1-background">
+        <h1>Projects</h1>
       </div>
     </header>
 
