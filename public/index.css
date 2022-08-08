@@ -12,7 +12,7 @@ body {
     background-color:#028090;
 }
 
-.navbar {
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,22 +20,22 @@ body {
     color: white;
 }
 
-.brand {
+.nav__brand {
     font-size: 24px;
     margin: 11px; /*Cannot work out where 4px are coming from, hence 11px instead of 13px*/
 }
 
-.navbar ul {
+.nav ul {
     margin: 0;
     padding: 0;
     display: flex;
 }
 
-.navbar li {
+.nav li {
     list-style: none;
 }
 
-.navbar li a {
+.nav li a {
     text-decoration: none;
     padding: 0 15px;
     display: block;
@@ -43,16 +43,16 @@ body {
     color: white;
 }
 
-.navbar li:hover {
+.nav li:hover {
     background-color: #028090;
 }
 
-.navbar li a.current {
+.nav li a.nav__current {
     background-color: white;
     color: #00A896;
 }
 
-.toggle-button {
+.nav__toggle-btn {
     position: absolute;
     top: 12.5px;
     right: 16px;
@@ -63,7 +63,7 @@ body {
     height: 25px;
 }
 
-.toggle-button .bar {
+.nav__toggle-btn .nav__bar {
     height: 3px;
     width: 100%;
     background-color: white;
@@ -71,29 +71,29 @@ body {
 }
 
 @media (max-width: 450px) {
-    .toggle-button {
+    .nav__toggle-btn {
         display: flex;
     }
-    .links {
+    .nav__links {
         display: none;
         width: 100%;
     }
-    .navbar {
+    .nav {
         flex-direction: column;
         align-items: flex-start;
     }
-    .links ul {
+    .nav__links ul {
         flex-direction: column;
         width: 100%;
         background-color: #00A896;
     }
-    .links li {
+    .nav__links li {
         text-align: center;
     }
-    .links li a {
+    .nav__links li a {
         line-height: 30px;
     }
-    .links.active {
+    .nav__links.active {
         display: flex;
     }
 }
