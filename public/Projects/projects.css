@@ -17,7 +17,7 @@ body {
     background-color:#81c3c9;
 }
 
-.navbar {
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,22 +25,22 @@ body {
     color: white;
 }
 
-.brand {
+.nav__brand {
     font-size: 24px;
     margin: 11px; /*Cannot work out where 4px are coming from, hence 11px instead of 13px*/
 }
 
-.navbar ul {
+.nav ul {
     margin: 0;
     padding: 0;
     display: flex;
 }
 
-.navbar li {
+.nav li {
     list-style: none;
 }
 
-.navbar li a {
+.nav li a {
     text-decoration: none;
     padding: 0 15px;
     display: block;
@@ -48,16 +48,16 @@ body {
     color: white;
 }
 
-.navbar li:hover {
+.nav li:hover {
     background-color: #81c3c9;
 }
 
-.navbar li a.current {
+.nav li a.nav__current {
     background-color: white;
     color: #00A896;
 }
 
-.toggle-button {
+.nav__toggle-btn {
     position: absolute;
     top: 12.5px;
     right: 16px;
@@ -68,7 +68,7 @@ body {
     height: 25px;
 }
 
-.toggle-button .bar {
+.nav__toggle-btn .nav__bar {
     height: 3px;
     width: 100%;
     background-color: white;
@@ -76,34 +76,34 @@ body {
 }
 
 @media (max-width: 450px) {
-    .toggle-button {
+    .nav__toggle-btn {
         display: flex;
     }
-    .links {
+    .nav__links {
         display: none;
         width: 100%;
     }
-    .navbar {
+    .nav {
         flex-direction: column;
         align-items: flex-start;
     }
-    .links ul {
+    .nav__links ul {
         flex-direction: column;
         width: 100%;
         background-color: #00A896;
     }
-    .links li {
+    .nav__links li {
         text-align: center;
     }
-    .links li a {
+    .nav__links li a {
         line-height: 30px;
     }
-    .links.active {
+    .nav__links.active {
         display: flex;
     }
 }
 
-#heading-img {
+.images {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -113,7 +113,7 @@ body {
     margin-top: 40px;
 }
 
-#heading-background {
+.images__background {
     background-color: #028090;
     height: 300px;
     width: 100%;
@@ -124,7 +124,7 @@ body {
     z-index: -1;
 }
 
-#image1 {
+.images__nav {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -134,7 +134,7 @@ body {
     height: 250px;
 }
 
-#image2 {
+.images__to-do {
     position: absolute;
     bottom: 0;
     left: 15%;
@@ -142,7 +142,7 @@ body {
     height: 200px;
 }
 
-#image3 {
+.images__counter {
     position: absolute;
     top: 0;
     right: 15%;
@@ -150,7 +150,7 @@ body {
     height: 200px;
 }
 
-#image4 {
+.images__swapper {
     position: absolute;
     bottom: 0;
     right: 15%;
@@ -158,7 +158,7 @@ body {
     height: 200px;
 }
 
-#image5 {
+.images__switch {
     position: absolute;
     top: 0;
     left: 15%;
@@ -167,24 +167,24 @@ body {
 }
 
 @media (max-width: 1180px) {
-    #image2,
-    #image3,
-    #image4,
-    #image5 {
+    .images__to-do,
+    .images__counter,
+    .images__swapper,
+    .images__switch {
         height: 18vw;
     }
-    #image1 {
+    .images__nav {
         height: 25vw;
     }
-    #heading-img {
+    .images {
         height: 40vw;
     }
-    #heading-background {
+    .images__background {
         height: 30vw;
     }
 }
 
-#h1-background {
+.heading {
     background-color: aliceblue;
     width: 100%;
     height: 120px;
@@ -200,17 +200,17 @@ header h1 {
     line-height: 120px; 
 }
 
-.proj-background {
+.projects {
     margin: 0 5% 40px;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='152' height='152' viewBox='0 0 152 152'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='temple' fill='%23ffffff' fill-opacity='0.48'%3E%3Cpath d='M152 150v2H0v-2h28v-8H8v-20H0v-2h8V80h42v20h20v42H30v8h90v-8H80v-42h20V80h42v40h8V30h-8v40h-42V50H80V8h40V0h2v8h20v20h8V0h2v150zm-2 0v-28h-8v20h-20v8h28zM82 30v18h18V30H82zm20 18h20v20h18V30h-20V10H82v18h20v20zm0 2v18h18V50h-18zm20-22h18V10h-18v18zm-54 92v-18H50v18h18zm-20-18H28V82H10v38h20v20h38v-18H48v-20zm0-2V82H30v18h18zm-20 22H10v18h18v-18zm54 0v18h38v-20h20V82h-18v20h-20v20H82zm18-20H82v18h18v-18zm2-2h18V82h-18v18zm20 40v-18h18v18h-18zM30 0h-2v8H8v20H0v2h8v40h42V50h20V8H30V0zm20 48h18V30H50v18zm18-20H48v20H28v20H10V30h20V10h38v18zM30 50h18v18H30V50zm-2-40H10v18h18V10z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
-.projects {
+.projects__container {
     padding: 40px 0;
     margin: 0 5%;
 }
 
-.projects img {
+.projects__container img {
     height: 380px;
     display: block;
     margin-left: auto;
@@ -221,14 +221,14 @@ header h1 {
 }
 
 @media only screen and (max-width: 510px) {
-    .projects img {
+    .projects__container img {
         width: 90%;
         height: auto;
     }
 }
 
-.projects-h2,
-.projects-p {
+.projects__title,
+.projects__text {
     padding: 20px 20px;
     margin-bottom: 20px;
     background-color: #028090;
@@ -237,28 +237,28 @@ header h1 {
     box-shadow: 5px 5px darkslategrey;
 }
 
-.projects-h2 {
+.projects__title {
     border-style: solid;
     border-width: 5px;
     border-color: aliceblue;
 }
 
-.github {
+.projects__github {
     color: white;
 }
 
 @media only screen and (max-width: 510px) {
-    .github {
+    .projects__github {
         font-size: 12px;
     }
 }
 
-.click-container {
+.projects__click-container {
     width: 100%;
     text-align: center;
 }
 
-.click {
+.projects__click {
     text-decoration: none;
     color: #02C39A;
     font-size: 25px;
@@ -276,13 +276,13 @@ header h1 {
 }
 
 @media only screen and (max-width: 510px) {
-    .click {
+    .projects__click {
         width: 90%;
         font-size: 4vw;
     }
 }
 
-.click:hover {
+.projects__click:hover {
     background-color: #02C39A;
     color: aliceblue; 
     border-radius: 20px;
@@ -291,7 +291,7 @@ header h1 {
     border-style: solid;
 }
 
-.underline {
+.projects__underline {
     height: 10px;
     width: 200px;
     background-color: darkslategrey;
@@ -312,11 +312,16 @@ footer a {
     padding: 0 15px;
 }
 
-#back {
+.contact__back {
     float: right;
     background-color: white;
     color: #00A896;
     text-decoration: none;
+}
+
+.contact__back:hover {
+    background-color:#81c3c9;
+    color: aliceblue;
 }
 
 footer p {
@@ -325,13 +330,8 @@ footer p {
     line-height: 50px;
 }
 
-#email:hover {
+.contact__email:hover {
     text-decoration: underline;
-}
-
-#back:hover {
-    background-color:#81c3c9;
-    color: aliceblue;
 }
 
 @media only screen and (max-width: 480px) {

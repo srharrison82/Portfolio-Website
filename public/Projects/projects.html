@@ -10,102 +10,94 @@
 
   <body>
     <header>
-      <nav class="navbar">
-        <div class="brand">Samuel Harrison</div>
-        <a href="#" class="toggle-button">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+      <nav class="nav">
+        <div class="nav__brand">Samuel Harrison</div>
+        <a href="#" class="nav__toggle-btn">
+          <span class="nav__bar"></span>
+          <span class="nav__bar"></span>
+          <span class="nav__bar"></span>
         </a>
-        <div class="links">
+        <div class="nav__links">
           <ul>
             <li><a  href="../index.html">Home</a></li>
             <li><a href="../About/about.html">About</a></li>
-            <li><a class="current" href="#">Projects</a></li>
+            <li><a class="nav__current" href="#">Projects</a></li>
           </ul>
         </div>
       </nav>
 
-      <div id="heading-img" id="top">
-        <div id="heading-background"></div>
-        <img id="image1" src="../Images/nav.png"/>
-        <img id="image2" src="../Images/toDo.png"/>
-        <img id="image3" src="../Images/counter.png"/>
-        <img id="image4" src="../Images/photoSwapper.png"/>
-        <img id="image5" src="../Images/switch.png"/>
+      <div class="images" id="top">
+        <div class="images__background"></div>
+        <img class="images__nav" src="../Images/nav.png"/>
+        <img class="images__to-do" src="../Images/toDo.png"/>
+        <img class="images__counter" src="../Images/counter.png"/>
+        <img class="images__swapper" src="../Images/photoSwapper.png"/>
+        <img class="images__switch" src="../Images/switch.png"/>
       </div>
 
-      <div id="h1-background">
+      <div class="heading">
         <h1>Projects</h1>
       </div>
     </header>
 
     <main>
-      <div class="proj-background">
-        <div class="projects" id="colour-link">
+      <div class="projects">
+        <div class="projects__container" id="colour-link">
           <img src="../Images/switch-square.png" alt="Colour Switch" />
 
-          <h2 class="projects-h2">Colour Switch</h2>
+          <h2 class="projects__title">Colour Switch</h2>
 
-          <p class="projects-p">
+          <p class="projects__text">
             This project is a simple colour switcher. The premise is to provide a
             button which will change the hex colour at random. In order to do
             this, I needed to use the built in Math.random and Math.floor
             functions to loop through an array of the 6 HEX digits.
           </p>
 
-          <p class="projects-p">
-            <a class="github" href="https://github.com/srharrison82/colourSwitch"
-              >github.com/srharrison82/colourSwitch</a
-            >
+          <p class="projects__text">
+            <a class="projects__github" href="https://github.com/srharrison82/colourSwitch">github.com/srharrison82/colourSwitch</a>
           </p>
 
-          <div class="click-container">
-            <a class="click" href="./colourSwitch/colourSwitch.html"
-              >Click me to see the project!</a
-            >
+          <div class="projects__click-container">
+            <a class="projects__click" href="./colourSwitch/colourSwitch.html">Click me to see the project!</a>
           </div>
         </div>
       </div>
 
-      <div class="underline"></div>
+      <div class="projects__underline"></div>
 
-      <div class="proj-background">
-        <div class="projects" id="counter-link">
+      <div class="projects">
+        <div class="projects__container" id="counter-link">
           <img src="../Images/counter-square.png" alt="Number Counter" />
 
-          <h2 class="projects-h2">Number Counter</h2>
+          <h2 class="projects__title">Number Counter</h2>
 
-          <p class="projects-p">
+          <p class="projects__text">
             Number Counter uses 3 buttons - reset, decrease and increase. An
             if/else statement allows the buttons to increment or decrement each
             time a 'click' event occurs on which ever button. Thus, the amount on
             the screen changes each time.
           </p>
 
-          <p class="projects-p">
-            <a class="github" href="https://github.com/srharrison82/numberCounter"
-              >github.com/srharrison82/numberCounter</a
-            >
+          <p class="projects__text">
+            <a class="projects__github" href="https://github.com/srharrison82/numberCounter">github.com/srharrison82/numberCounter</a>
           </p>
 
-          <div class="click-container">
-            <a class="click" href="./numberCounter/numberCounter.html"
-              >Click me to see the project!</a
-            >
+          <div class="projects__click-container">
+            <a class="projects__click" href="./numberCounter/numberCounter.html">Click me to see the project!</a>
           </div>
         </div>
       </div>
       
-      <div class="underline"></div>
+      <div class="projects__underline"></div>
 
-      <div class="proj-background">
-        <div class="projects" id="carousel-link">
+      <div class="projects">
+        <div class="projects__container" id="carousel-link">
           <img src="../Images/carousel-square.png" alt="Photo Carousel" />
 
-          <h2 class="projects-h2">Photo Carousel</h2>
+          <h2 class="projects__title">Photo Carousel</h2>
 
-          <p class="projects-p">
+          <p class="projects__text">
             This simple carousel of photos uses 3 buttons - previous, next or
             random. The concept is that each time a button is clicked, a related
             function will be triggered to increment or decrement the id of the
@@ -113,89 +105,81 @@
             other linked information to change each time with the photo.
           </p>
 
-          <p class="projects-p">
-            <a class="github" href="https://github.com/srharrison82/photoCarousel"
-              >github.com/srharrison82/photoCarousel</a
-            >
+          <p class="projects__text">
+            <a class="projects__github" href="https://github.com/srharrison82/photoCarousel">github.com/srharrison82/photoCarousel</a>
           </p>
 
-          <div class="click-container">
-            <a class="click" href="./photoCarousel/photoCarousel.html"
-              >Click me to see the project!</a
-            >
+          <div class="projects__click-container">
+            <a class="projects__click" href="./photoCarousel/photoCarousel.html">Click me to see the project!</a>
           </div>
         </div>
       </div>
 
-      <div class="underline"></div>
+      <div class="projects__underline"></div>
 
-      <div class="proj-background">
-        <div class="projects" id="responsive-nav">
+      <div class="projects">
+        <div class="projects__container" id="responsive-nav">
           <img src="../Images/nav-square.png" alt="Responsive Nav" />
 
-          <h2 class="projects-h2">Responsive Nav</h2>
+          <h2 class="projects__title">Responsive Nav</h2>
 
-          <p class="projects-p">
+          <p class="projects__text">
             The responsive nav-bar uses flexbox tools to hide and access the links
             within the nav, so that it can then push them below in column form.
             This is useful to save space and is allowed to happen through the use
             of the button which appears when the screen is below 450px in width.
           </p>
 
-          <p class="projects-p">
-            <a class="github" href="https://github.com/srharrison82/responsiveNav"
-              >github.com/srharrison82/responsiveNav</a
-            >
+          <p class="projects__text">
+            <a class="projects__github" href="https://github.com/srharrison82/responsiveNav">github.com/srharrison82/responsiveNav</a>
           </p>
 
-          <div class="click-container">
-            <a class="click" href="./responsiveNav/index.html"
-              >Click me to see the project!</a
-            >
+          <div class="projects__click-container">
+            <a class="projects__click" href="./responsiveNav/index.html">Click me to see the project!</a>
           </div>
         </div>
       </div>
 
-      <div class="underline"></div>
+      <div class="projects__underline"></div>
 
-      <div class="proj-background">
-        <div class="projects" id="toDoList">
+      <div class="projects">
+        <div class="projects__container" id="toDoList">
           <img src="../Images/toDo-square.png" alt="To Do List" />
 
-          <h2 class="projects-h2">To-Do List</h2>
+          <h2 class="projects__title">To-Do List</h2>
 
-          <p class="projects-p">
+          <p class="projects__text">
             This To-Do List was made by using event listeners. This allows the user input to be registered by the code, so that when the addition button is clicked a new paragraph is created below. This is where the new information is stored, which can also be crossed out with one click, and removed with a double click.
           </p>
 
-          <p class="projects-p">
-            <a class="github" href="https://github.com/srharrison82/toDo">github.com/srharrison82/toDO</a>
+          <p class="projects__text">
+            <a class="projects__github" href="https://github.com/srharrison82/toDo">github.com/srharrison82/toDO</a>
           </p>
 
-          <div class="click-container">
-            <a class="click" href="./toDo/toDo.html">Click me to see the project!</a>
+          <div class="projects__click-container">
+            <a class="projects__click" href="./toDo/toDo.html">Click me to see the project!</a>
           </div>
         </div>
       </div>
 
-      <div class="underline"></div>
+      <div class="projects__underline"></div>
 
-      <div class="proj-background">
-        <div class="projects" id="photoSwapper">
+      <div class="projects">
+        <div class="projects__container" id="photoSwapper">
           <img src="../Images/photoSwapper-square.png" alt="Photo Swapper" />
 
-          <h2 class="projects-h2">Photo Swapper</h2>
+          <h2 class="projects__title">Photo Swapper</h2>
 
-          <p class="projects-p">
+          <p class="projects__text">
             The Photo Swapper uses a function for each picture, so that it can determine which photo is central when clicked. This is to allow the photos to be swapped when clicked, but to prevent duplicate photos appearing across the swapper, achieved by using 'if' statements. One click on any photo will reset the Swapper, and another click to an outside photo will swap that one in, front and center. 
           </p>
 
-          <p class="projects-p">
-            <a class="github" href="https://github.com/srharrison82/photoSwapper">github.com/srharrison82/photoSwapper</a>
+          <p class="projects__text">
+            <a class="projects__github" href="https://github.com/srharrison82/photoSwapper">github.com/srharrison82/photoSwapper</a>
           </p>
 
-          <div class="click-container">
-            <a class="click" href="./photoSwapper/photoSwapper.html">Click me to see the project!</a>
+          <div class="projects__click-container">
+            <a class="projects__click" href="./photoSwapper/photoSwapper.html">Click me to see the project!</a>
           </div>
         </div>
       </div>
@@ -203,10 +187,10 @@
       <script type="text/javascript" src="./projects.js"></script>
     </main>
 
-    <footer>
-      <a href="mailto:srharrison82@gmail.com" id="email">srharrison82@gmail.com</a>
-      <a id="number" href="tel:07586653620">07586653620</a>
-      <a href="#top" id="back">Back To Top</a>
+    <footer class="contact">
+      <a href="mailto:srharrison82@gmail.com?subject=subject text" class="contact__email">srharrison82@gmail.com</a>
+      <a class="contact__number" href="tel:07586653620">07586653620</a>
+      <a href="#top" class="contact__back">Back To Top</a>
     </footer>
   </body>
 </html>

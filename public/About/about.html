@@ -10,24 +10,24 @@
 
   <body>
     <header>
-      <nav class="navbar">
-        <div class="brand">Samuel Harrison</div>
-        <a href="#" class="toggle-button">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+      <nav class="nav">
+        <div class="nav__brand">Samuel Harrison</div>
+        <a href="#" class="nav__toggle-btn">
+          <span class="nav__bar"></span>
+          <span class="nav__bar"></span>
+          <span class="nav__bar"></span>
         </a>
-        <div class="links">
+        <div class="nav__links">
           <ul>
             <li><a  href="../index.html">Home</a></li>
-            <li><a class="current" href="#">About</a></li>
+            <li><a class="nav__current" href="#">About</a></li>
             <li><a href="../Projects/projects.html">Projects</a></li>
           </ul>
         </div>
       </nav>
 
-      <div id="about-background" id="top">
-        <div id="img-about-me">
+      <div class="heading" id="top">
+        <div class="heading__container">
           <img
             src="../Images/me2.jpeg"
             alt="Myself2"
@@ -36,7 +36,7 @@
           />
           <h1>About Me</h1>
           <img
-            id="img2"
+            class="heading__img-right"
             src="../Images/me3.jpeg"
             alt="Myself3"
             width="30%"
@@ -47,8 +47,8 @@
     </header>
 
     <main>
-      <div id="about-me-background">
-        <div id="about-me">
+      <div class="about-me">
+        <div class="about-me__info">
           <p>
             I would describe myself as social and personable around people. I
             feel like this makes me a good addition to a team, as I enjoy
@@ -112,18 +112,16 @@
         </div>
       </div>
       
-      <img id="lake" src="../Images/lake.jpg" alt="lake" />
+      <img class="lake" src="../Images/lake.jpg" alt="lake" />
       
 
       <script type="text/javascript" src="./about.js"></script>
     </main>
 
-    <footer>
-      <a href="mailto:srharrison82@gmail.com" id="email"
-        >srharrison82@gmail.com</a
-      >
-      <a id="number" href="tel:07586653620">07586653620</a>
-      <a href="#top" id="back">Back To Top</a>
+    <footer class="contact">
+      <a href="mailto:srharrison82@gmail.com?subject=subject text" class="contact__email">srharrison82@gmail.com</a>
+      <a class="contact__number" href="tel:07586653620">07586653620</a>
+      <a href="#top" class="contact__back">Back To Top</a>
     </footer>
   </body>
 </html>
