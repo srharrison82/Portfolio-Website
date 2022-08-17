@@ -12,6 +12,8 @@ body {
     background-color:#F0F3BD;
 }
 
+/* Nav Section */
+
 .nav {
     display: flex;
     justify-content: space-between;
@@ -25,17 +27,17 @@ body {
     margin: 11px; /*Cannot work out where 4px are coming from, hence 11px instead of 13px*/
 }
 
-.nav ul {
+.nav__ul {
     margin: 0;
     padding: 0;
     display: flex;
 }
 
-.nav li {
+.nav__list {
     list-style: none;
 }
 
-.nav li a {
+.nav__a {
     text-decoration: none;
     padding: 0 15px;
     display: block;
@@ -43,12 +45,15 @@ body {
     color: white;
 }
 
-.nav li a:hover {
+.nav__list:hover {
     background-color: #F0F3BD;
-    color: #00A896;
 }
 
-.nav li a.nav__current {
+.nav__a:hover {
+    color:#00A896;
+}
+
+.nav__current {
     background-color: white;
     color: #00A896;
 }
@@ -64,7 +69,7 @@ body {
     height: 25px;
 }
 
-.nav__toggle-btn .nav__bar {
+.nav__bar {
     height: 3px;
     width: 100%;
     background-color: white;
@@ -83,21 +88,23 @@ body {
         flex-direction: column;
         align-items: flex-start;
     }
-    .nav__links ul {
+    .nav__ul {
         flex-direction: column;
         width: 100%;
         background-color: #00A896;
     }
-    .nav__links li {
+    .nav__list {
         text-align: center;
     }
-    .nav__links li a {
+    .nav__a {
         line-height: 30px;
     }
     .nav__links.active {
         display: flex;
     }
 }
+
+/* Heading Section */ 
 
 .heading {
     background-image: url(../Images/about-heading-background.png);
@@ -110,18 +117,20 @@ body {
     position: relative;
 }
 
-header img,
-header h1 {
+.heading__img,
+.heading__title {
     display:inline-block;
     vertical-align:middle;
 }
 
-header img {
+.heading__img {
+    width: 30%;
+    height: 30%;
     border-radius: 20px;
     box-shadow: 6px 8px 16px 6px rgba(0, 0, 0, 0.20), 6px 12px 40px 6px rgba(0, 0, 0, 0.19);
 }
 
-header h1 {
+.heading__title {
     font-size: 6vw;
     overflow-wrap:normal;
     color: aliceblue;
@@ -135,17 +144,21 @@ header h1 {
     float: right;
 }
 
+/* About-me Section */ 
+
 .about-me {
     background:
     radial-gradient(circle at 100% 50%, transparent 20%, #F0F3BD 21%, #F0F3BD 34%, transparent 35%, transparent),
     radial-gradient(circle at 0% 50%, transparent 20%, #F0F3BD 21%, #F0F3BD 34%, transparent 35%, transparent) 0 -50px;
     background-color: #81c3c9;
     background-size:75px 100px;
+    padding: 20px 0;
+    margin-bottom: 20px;
 }
 
-.about-me p,
-.about-me h3,
-.about-me ul {
+.about-me__text,
+.about-me__h3,
+.about-me__ul {
     padding: 20px;
     margin: 20px 10%;
     background-color: #028090;
@@ -154,15 +167,10 @@ header h1 {
     box-shadow: 5px 5px darkslategray;
 }
 
-.about-me h3 {
+.about-me__h3 {
     border-width: 5px;
     border-color: aliceblue;
     border-style: solid;
-}
-
-.about-me {
-    padding: 20px 0;
-    margin-bottom: 20px;
 }
 
 .lake {
@@ -171,16 +179,18 @@ header h1 {
     margin-bottom: 15px;
 }
 
-footer {
+/* Contact-details Section */
+
+.contact {
     background-color:#00A896;
-    color:aliceblue;
+    color:white;
 }
 
-footer a {
+.contact__link {
     text-align: center;
     height: 50px;
     line-height: 50px;
-    color: aliceblue;
+    color: white;
     padding: 0 15px;
 }
 
@@ -196,21 +206,15 @@ footer a {
     color: #00A896;
 }
 
-footer p {
-    display:inline-block;
-    height: 50px;
-    line-height: 50px;
-}
-
 .contact__email:hover {
     text-decoration: underline;
 }
 
 @media only screen and (max-width: 480px) {
-    footer {
+    .contact {
         font-size: 10px;
     }
-    footer a {
+    .contact__link {
         padding: 0 5px;
     }
 }

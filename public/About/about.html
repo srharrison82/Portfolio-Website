@@ -12,16 +12,18 @@
     <header>
       <nav class="nav">
         <div class="nav__brand">Samuel Harrison</div>
+
         <a href="#" class="nav__toggle-btn">
           <span class="nav__bar"></span>
           <span class="nav__bar"></span>
           <span class="nav__bar"></span>
         </a>
+
         <div class="nav__links">
           <ul class="nav__ul">
-            <li><a class="nav__home" href="../index.html">Home</a></li>
-            <li><a class="nav__current nav__about" href="#">About</a></li>
-            <li><a class="nav__projects" href="../Projects/projects.html">Projects</a></li>
+            <li class="nav__list"><a class="nav__a nav__home" href="../index.html">Home</a></li>
+            <li class="nav__list"><a class="nav__a nav__current nav__about" href="#">About</a></li>
+            <li class="nav__list"><a class="nav__a nav__projects" href="../Projects/projects.html">Projects</a></li>
           </ul>
         </div>
       </nav>
@@ -30,17 +32,14 @@
         <div class="heading__container">
           <img
             src="../Images/me2.jpeg"
-            alt="Myself2"
-            width="30%"
-            height="30%"
+            alt="Myself Left"
+            class="heading__img"
           />
-          <h1>About Me</h1>
+          <h1 class="heading__title">About Me</h1>
           <img
-            class="heading__img-right"
             src="../Images/me3.jpeg"
-            alt="Myself3"
-            width="30%"
-            height="30%"
+            alt="Myself Right"
+            class="heading__img heading__img-right"
           />
         </div>
       </div>
@@ -49,62 +48,62 @@
     <main>
       <div class="about-me">
         <div class="about-me__info">
-          <p>
+          <p class="about-me__text">
             I would describe myself as social and personable around people. I
             feel like this makes me a good addition to a team, as I enjoy
             creating relationships in and around work.
           </p>
 
-          <p>
+          <p class="about-me__text">
             Honesty is something I value a lot, and I strive to be honest with
             myself and others. This is a trait that has helped me to develop a lot as
             a person and create strong, stable relationships with colleagues.
           </p>
 
-          <h3>My Interests</h3>
+          <h3 class="about-me__h3">My Interests</h3>
 
-          <ul>
-            <li>
+          <ul class="about-me__ul">
+            <li class="about-me__list">
               Video games
             </li>
-            <li>
+            <li class="about-me__list">
               Being outdoors
             </li>
-            <li>
+            <li class="about-me__list">
               Badminton
             </li>
-            <li>
+            <li class="about-me__list">
               Volleyball
             </li>
-            <li>
+            <li class="about-me__list">
               Coffee
             </li>
-            <li>
+            <li class="about-me__list">
               Football
             </li>
-            <li>
+            <li class="about-me__list">
               Meeting up with friends.
             </li>
           </ul>
 
-          <h3>Why am I a good person to work with?</h3>
+          <h3 class="about-me__h3">Why am I a good person to work with?</h3>
 
-          <ul>
-            <li>
+          <ul class="about-me__ul">
+            <li class="about-me__list">
               My favorite work environments are ones where there is always
               jobs to do as I enjoy being proactive and contributing as much
               as possible. This is not only to benefit my employer, but also my
               fellow employees and personal development.
             </li>
-            <li>
+            <li class="about-me__list">
               Previous employers would credit my work ethic and also, my ability
               to slot in where-ever needed, as I try to be flexible as I am eager to learn.
             </li>
-            <li>
+            <li class="about-me__list">
               My approachability enables me to get to know colleagues quickly,
               to help build trust within our working relationship.
             </li>
-            <li>
+            <li class="about-me__list">
               Other traits that I really value above other things are being well spoken, polite and
               open minded to new ideas or concepts.
             </li>
@@ -119,9 +118,9 @@
     </main>
 
     <footer class="contact">
-      <a href="mailto:srharrison82@gmail.com?subject=subject text" class="contact__email">srharrison82@gmail.com</a>
-      <a class="contact__number" href="tel:07586653620">07586653620</a>
-      <a href="#top" class="contact__back">Back To Top</a>
+      <a class="contact__email contact__link" href="mailto:srharrison82@gmail.com?subject=subject text">srharrison82@gmail.com</a>
+      <a class="contact__number contact__link" href="tel:07586653620">07586653620</a>
+      <a class="contact__back contact__link" href="#top">Back To Top</a>
     </footer>
   </body>
 </html>
