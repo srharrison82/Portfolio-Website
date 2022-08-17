@@ -51,7 +51,7 @@ body {
 }
 
 .nav__list:hover {
-    background-color: #028090;
+    background-color: #81c3c9;
 }
 
 .nav__current {
@@ -104,6 +104,8 @@ body {
         display: flex;
     }
 }
+
+/* Image-presentation Section */
 
 .images {
     display: block;
@@ -186,6 +188,8 @@ body {
     }
 }
 
+/* Title Section */
+
 .heading {
     background-color: aliceblue;
     width: 100%;
@@ -193,7 +197,7 @@ body {
     margin-bottom: 40px;
 }
 
-header h1 {
+.heading__title {
     text-align: center;
     font-size: 90px;
     color: #028090;
@@ -201,6 +205,8 @@ header h1 {
     vertical-align: middle;
     line-height: 120px; 
 }
+
+/* Projects Section */
 
 .projects {
     margin: 0 5% 40px;
@@ -212,7 +218,7 @@ header h1 {
     margin: 0 5%;
 }
 
-.projects__container img {
+.projects__img {
     height: 380px;
     display: block;
     margin-left: auto;
@@ -223,7 +229,7 @@ header h1 {
 }
 
 @media only screen and (max-width: 510px) {
-    .projects__container img {
+    .projects__img {
         width: 90%;
         height: auto;
     }
@@ -324,7 +330,7 @@ header h1 {
 }
 
 .contact__back:hover {
-    background-color:#028090;
+    background-color:#81c3c9;
     color: white;
 }
 
