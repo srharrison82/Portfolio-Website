@@ -1,0 +1,38 @@
+/* Contact-details Section */
+.contact {
+    background-color: $nav-footer-color;
+    color: $third-color;
+}
+
+.contact__link {
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    color: $third-color;
+    padding: 0 15px;
+}
+
+.contact__back {
+    float: right;
+    background-color: $third-color;
+    color: $nav-footer-color;
+    text-decoration: none;
+}
+
+.contact__back:hover {
+    background-color: $primary-home-color;
+    color: $third-color;
+}
+
+.contact__email:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 480px) {
+    .contact {
+        font-size: 10px;
+    }
+    .contact__link {
+        padding: 0 5px;
+    }
+}
