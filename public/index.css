@@ -12,7 +12,9 @@ body {
     background-color:#028090;
 }
 
-.navbar {
+/* Nav Section */
+
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,22 +22,22 @@ body {
     color: white;
 }
 
-.brand {
+.nav__brand {
     font-size: 24px;
     margin: 11px; /*Cannot work out where 4px are coming from, hence 11px instead of 13px*/
 }
 
-.navbar ul {
+.nav__ul {
     margin: 0;
     padding: 0;
     display: flex;
 }
 
-.navbar li {
+.nav__list {
     list-style: none;
 }
 
-.navbar li a {
+.nav__a {
     text-decoration: none;
     padding: 0 15px;
     display: block;
@@ -43,16 +45,16 @@ body {
     color: white;
 }
 
-.navbar li:hover {
+.nav__list:hover {
     background-color: #028090;
 }
 
-.navbar li a.current {
+.nav__current {
     background-color: white;
     color: #00A896;
 }
 
-.toggle-button {
+.nav__toggle-btn {
     position: absolute;
     top: 12.5px;
     right: 16px;
@@ -63,7 +65,7 @@ body {
     height: 25px;
 }
 
-.toggle-button .bar {
+.nav__bar {
     height: 3px;
     width: 100%;
     background-color: white;
@@ -71,69 +73,73 @@ body {
 }
 
 @media (max-width: 450px) {
-    .toggle-button {
+    .nav__toggle-btn {
         display: flex;
     }
-    .links {
+    .nav__links {
         display: none;
         width: 100%;
     }
-    .navbar {
+    .nav {
         flex-direction: column;
         align-items: flex-start;
     }
-    .links ul {
+    .nav__ul {
         flex-direction: column;
         width: 100%;
         background-color: #00A896;
     }
-    .links li {
+    .nav__list {
         text-align: center;
     }
-    .links li a {
+    .nav__a {
         line-height: 30px;
     }
-    .links.active {
+    .nav__links.active {
         display: flex;
     }
 }
 
-#img-h1-background {
+/* Heading Section */
+
+.heading {
     background-image: url(./Images/homepage-heading.png);
     background-size: cover;
     background-position:left;
 }
 
-#img-h1 {
+.heading__container {
     padding: 40px 7%;
 }
 
-header img,
-header h1 {
+.heading__img,
+.heading__title {
     display:inline-block;
     vertical-align:middle;
 }
 
-header img {
+.heading__img {
     border-radius: 20px;
     box-shadow: 6px 8px 16px 6px rgba(0, 0, 0, 0.20), 6px 12px 40px 6px rgba(0, 0, 0, 0.19);
 }
 
-header h1 {
+.heading__title {
     padding-left: 5%;
     font-size: 6.5vw;
     overflow-wrap:normal;
     width: 50%;
     height: 50%;
-    color: aliceblue;
+    color: white;
 }
 
+/* Info Section */
+
 .info {
-    background-color:aliceblue;
+    background-color:white;
     padding: 20px 0;
 }
 
-.p1-background {
+.info__right {
     background-color:#02C39A;
     margin: 20px 0 20px 7%;
     padding: 0 11% 0 4%;
@@ -141,7 +147,7 @@ header h1 {
     box-shadow: 5px 5px darkslategrey;
 }
 
-.p2-background {
+.info__left {
     background-color:#02C39A;
     margin: 20px 7% 20px 0;
     padding: 0 4% 0 11%;
@@ -149,7 +155,7 @@ header h1 {
     box-shadow: 5px 5px darkslategrey;
 }
 
-.h3-background {
+.info__right-blue {
     background-color:#02C39A;
     margin: 20px 0 20px 7%;
     padding: 0 11% 0 4%;
@@ -160,14 +166,16 @@ header h1 {
     border-style: solid;
 }
 
-.info p,
-ul,
-h3 {
+.info__text,
+.info__ul,
+.info__h3 {
     padding: 20px 0;
-    color: aliceblue;
+    color: white;
 }
 
-#flex-container {
+/* Flex-projects Section */
+
+.flex-projects {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -175,7 +183,7 @@ h3 {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='88' viewBox='0 0 88 88'%3E%3Cg fill='%23ffffff' fill-opacity='0.49'%3E%3Cpath fill-rule='evenodd' d='M29.42 29.41c.36-.36.58-.85.58-1.4V0h-4v26H0v4h28c.55 0 1.05-.22 1.41-.58h.01zm0 29.18c.36.36.58.86.58 1.4V88h-4V62H0v-4h28c.56 0 1.05.22 1.41.58zm29.16 0c-.36.36-.58.85-.58 1.4V88h4V62h26v-4H60c-.55 0-1.05.22-1.41.58h-.01zM62 26V0h-4v28c0 .55.22 1.05.58 1.41.37.37.86.59 1.41.59H88v-4H62zM18 36c0-1.1.9-2 2-2h10a2 2 0 1 1 0 4H20a2 2 0 0 1-2-2zm0 16c0-1.1.9-2 2-2h10a2 2 0 1 1 0 4H20a2 2 0 0 1-2-2zm16-26a2 2 0 0 1 2-2 2 2 0 0 1 2 2v4a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-4zm16 0a2 2 0 0 1 2-2 2 2 0 0 1 2 2v4a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-4zM34 58a2 2 0 0 1 2-2 2 2 0 0 1 2 2v4a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-4zm16 0a2 2 0 0 1 2-2 2 2 0 0 1 2 2v4a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-4zM34 78a2 2 0 0 1 2-2 2 2 0 0 1 2 2v6a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-6zm16 0a2 2 0 0 1 2-2 2 2 0 0 1 2 2v6a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-6zM34 4a2 2 0 0 1 2-2 2 2 0 0 1 2 2v6a2 2 0 0 1-2 2 2 2 0 0 1-2-2V4zm16 0a2 2 0 0 1 2-2 2 2 0 0 1 2 2v6a2 2 0 0 1-2 2 2 2 0 0 1-2-2V4zm-8 82a2 2 0 1 1 4 0v2h-4v-2zm0-68a2 2 0 1 1 4 0v10a2 2 0 1 1-4 0V18zM66 4a2 2 0 1 1 4 0v8a2 2 0 1 1-4 0V4zm0 72a2 2 0 1 1 4 0v8a2 2 0 1 1-4 0v-8zm-48 0a2 2 0 1 1 4 0v8a2 2 0 1 1-4 0v-8zm0-72a2 2 0 1 1 4 0v8a2 2 0 1 1-4 0V4zm24-4h4v2a2 2 0 1 1-4 0V0zm0 60a2 2 0 1 1 4 0v10a2 2 0 1 1-4 0V60zm14-24c0-1.1.9-2 2-2h10a2 2 0 1 1 0 4H58a2 2 0 0 1-2-2zm0 16c0-1.1.9-2 2-2h10a2 2 0 1 1 0 4H58a2 2 0 0 1-2-2zm-28-6a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm8 26a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm16 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM36 20a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm16 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm-8-8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 68a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm16-34a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm16-12a2 2 0 1 0 0 4 6 6 0 1 1 0 12 2 2 0 1 0 0 4 10 10 0 1 0 0-20zm-64 0a2 2 0 1 1 0 4 6 6 0 1 0 0 12 2 2 0 1 1 0 4 10 10 0 1 1 0-20zm56-12a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 48a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm-48 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0-48a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm24 32a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm0-4a6 6 0 1 0 0-12 6 6 0 0 0 0 12zm36-36a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-4a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM10 44c0-1.1.9-2 2-2h8a2 2 0 1 1 0 4h-8a2 2 0 0 1-2-2zm56 0c0-1.1.9-2 2-2h8a2 2 0 1 1 0 4h-8a2 2 0 0 1-2-2zm8 24c0-1.1.9-2 2-2h8a2 2 0 1 1 0 4h-8a2 2 0 0 1-2-2zM3 68c0-1.1.9-2 2-2h8a2 2 0 1 1 0 4H5a2 2 0 0 1-2-2zm0-48c0-1.1.9-2 2-2h8a2 2 0 1 1 0 4H5a2 2 0 0 1-2-2zm71 0c0-1.1.9-2 2-2h8a2 2 0 1 1 0 4h-8a2 2 0 0 1-2-2zm6 66a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-4a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM8 86a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-4a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0-68A6 6 0 1 1 8 2a6 6 0 0 1 0 12zm0-4a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm36 36a2 2 0 1 0 0-4 2 2 0 0 0 0 4z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
-#flex-container img {
+.flex-projects__img {
     height: 250px;
     width: 250px;
     
@@ -183,70 +191,70 @@ h3 {
     border-radius: 2vw;
 }
 
-#flex-container a {
+.flex-projects__link {
     margin: 20px;
 }
 
-#project1 {
+.flex-projects__nav {
     order: 1;
 }
 
-#project2 {
+.flex-projects__carousel {
     order: 2;
 }
 
-#project3 {
+.flex-projects__counter {
     order: 3;
 }
 
-#project4 {
+.flex-projects__switch {
     order: 4;
 }
 
-#project5 {
+.flex-projects__list {
     order: 5;
 }
 
-footer {
-    background-color:#00A896;
-    color:aliceblue;
+.flex-projects__swapper {
+    order: 6;
 }
 
-footer a {
+/* Contact-details Section */
+
+.contact {
+    background-color:#00A896;
+    color:white;
+}
+
+.contact__link {
     text-align: center;
     height: 50px;
     line-height: 50px;
-    color: aliceblue;
+    color: white;
     padding: 0 15px;
 }
 
-#back {
+.contact__back {
     float: right;
     background-color: white;
     color: #00A896;
     text-decoration: none;
 }
 
-footer p {
-    display:inline-block;
-    height: 50px;
-    line-height: 50px;
+.contact__back:hover {
+    background-color:#028090;
+    color: white;
 }
 
-#email:hover {
+.contact__email:hover {
     text-decoration: underline;
 }
 
-#back:hover {
-    background-color:#028090;
-    color: aliceblue;
-}
-
 @media only screen and (max-width: 480px) {
-    footer {
+    .contact {
         font-size: 10px;
     }
-    footer a {
+    .contact__link {
         padding: 0 5px;
     }
 }

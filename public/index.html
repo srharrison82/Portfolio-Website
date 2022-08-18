@@ -10,40 +10,42 @@
 
   <body>
     <header>
-      <nav class="navbar">
-        <div class="brand">Samuel Harrison</div>
-        <a href="#" class="toggle-button">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+      <nav class="nav">
+        <div class="nav__brand">Samuel Harrison</div>
+
+        <a href="#" class="nav__toggle-btn">
+          <span class="nav__bar"></span>
+          <span class="nav__bar"></span>
+          <span class="nav__bar"></span>
         </a>
-        <div class="links">
-          <ul>
-            <li><a class="current" href="#">Home</a></li>
-            <li><a href="./About/about.html">About</a></li>
-            <li><a href="./Projects/projects.html">Projects</a></li>
+
+        <div class="nav__links">
+          <ul class="nav__ul">
+            <li class="nav__list"><a class="nav__a nav__current nav__home" href="#">Home</a></li>
+            <li class="nav__list"><a class="nav__a nav__about" href="./About/about.html">About</a></li>
+            <li class="nav__list"><a class="nav__a nav__projects" href="./Projects/projects.html">Projects</a></li>
           </ul>
         </div>
       </nav>
 
-      <div id="img-h1-background" id="top">
-        <div id="img-h1">
+      <div class="heading" id="top">
+        <div class="heading__container">
           <img
             src="./Images/me1.jpeg"
-            title="Heading Portrait"
             alt="In a field."
             width="40%"
             height="40%"
+            class="heading__img"
           />
-          <h1>Welcome to my Portfolio Website.</h1>
+          <h1 class="heading__title">Welcome to my Portfolio Website</h1>
         </div>
       </div>
     </header>
 
     <main>
       <div class="info">
-        <div class="p2-background">
-          <p>
+        <div class="info__left">
+          <p class="info__text">
             Having been able to obtain a Microsoft qualification in
             HTML5 and CSS3, I've come to really enjoy the creative aspects in
             designing a website or project.
@@ -52,12 +54,12 @@
           </p>
         </div>
 
-        <div class="h3-background">
-          <h3>What am I looking for?</h3>
+        <div class="info__right-blue">
+          <h3 class="info__h3">What am I looking for?</h3>
         </div>
 
-        <div class="p2-background">
-          <p>
+        <div class="info__left">
+          <p class="info__text">
             I am looking for any kind of work experience I can obtain. Ideally I
             am looking for full time work but would also be happy to fullfil a
             part-time or temporary role in the hopes that it will lead to a more
@@ -65,36 +67,36 @@
           </p>
         </div>
 
-        <div class="h3-background">
-          <h3>Why should you hire me?</h3>
+        <div class="info__right-blue">
+          <h3 class="info__h3">Why should you hire me?</h3>
         </div>
 
-        <div class="p2-background">
-          <ul>
-            <li>
+        <div class="info__left">
+          <ul class="info__ul">
+            <li class="info__list">
               I have a very consistent, extremely high work ethic and always
               strive to improve.
             </li>
-            <li>
+            <li class="info__list">
               Having usually worked in teams before, I excel in these work
               environments but can also be very independent.
             </li>
-            <li>
+            <li class="info__list">
               I do enjoy meeting people in and around the workplace, and work
               hard to be as helpful and easy to work with as possible.
             </li>
-            <li>
+            <li class="info__list">
               I am confident in HTML5 and CSS3, but am currently focused on
               creating JavaScript led projects to improve that area of my Front
               End knowledge. This is due to me mainly focusing on the first two
               languages when I started learning.
             </li>
-            <li>
+            <li class="info__list">
               I am proficient in utilising Git and Github in my work. I have not
               yet contributed to many group projects but I do have knowledge of
               branching and pull requests.
             </li>
-            <li>
+            <li class="info__list">
               Over time, my projects section will show more complex projects. As
               of the moment, they are fairly simplistic which reflects my
               ability in the language of JavaScript, which I am working hard to
@@ -103,8 +105,8 @@
           </ul>
         </div>
 
-        <div class="p1-background">
-          <p>
+        <div class="info__right">
+          <p class="info__text">
             If you are looking to contact me with any queries, you will
             find my contact details at the bottom of each page. Please do not hesitate
             to get in touch.
@@ -112,54 +114,52 @@
         </div>
       </div>
 
-      <div id="flex-container">
-        <a href="./Projects/responsiveNav/index.html">
+      <div class="flex-projects">
+        <a class="flex-projects__link" href="./Projects/responsiveNav/index.html">
           <img
-          id="project1"
+          class="flex-projects__nav flex-projects__img"
           src="./Images/nav-square.png"
           alt="Responsive Nav"
-          width="33%"
           />
         </a>
         
-        <a href="./Projects/photoCarousel/photoCarousel.html">
+        <a class="flex-projects__link" href="./Projects/photoCarousel/photoCarousel.html">
           <img
-          id="project2"
+          class="flex-projects__carousel flex-projects__img"
           src="./Images/carousel-square.png"
           alt="Photo Carousel"
           />
         </a>
 
-        <a href="./Projects/numberCounter/numberCounter.html">
+        <a class="flex-projects__link" href="./Projects/numberCounter/numberCounter.html">
           <img
-          id="project3"
+          class="flex-projects__counter flex-projects__img"
           src="./Images/counter-square.png"
           alt="Number Counter"
           />
         </a>
         
-        <a href="./Projects/colourSwitch/colourSwitch.html">
+        <a class="flex-projects__link" href="./Projects/colourSwitch/colourSwitch.html">
           <img
-          id="project4"
+          class="flex-projects__switch flex-projects__img"
           src="./Images/switch-square.png"
           alt="Colour Switch"
           />
         </a>
 
-        <a href="./Projects/toDo/toDo.html">
+        <a class="flex-projects__link" href="./Projects/toDo/toDo.html">
           <img
-          id="project5"
+          class="flex-projects__list flex-projects__img"
           src="./Images/toDo-square.png"
           alt="To-Do List"
           />
         </a>
 
-        <a href="./Projects/photoSwapper/photoSwapper.html">
+        <a class="flex-projects__link" href="./Projects/photoSwapper/photoSwapper.html">
           <img
-          id="project6"
+          class="flex-projects__swapper flex-projects__img"
           src="./Images/photoSwapper-square.png"
           alt="Photo Swapper"
-          width="33%"
           />
         </a>
       </div>
@@ -167,12 +167,10 @@
       <script type="text/javascript" src="./app.js"></script>
     </main>
 
-    <footer>
-      <a href="mailto:srharrison82@gmail.com?subject=subject text" id="email"
-        >srharrison82@gmail.com</a
-      >
-      <a id="number" href="tel:07586653620">07586653620</a>
-      <a href="#top" id="back">Back To Top</a>
+    <footer class="contact">
+      <a class="contact__email contact__link" href="mailto:srharrison82@gmail.com?subject=subject text">srharrison82@gmail.com</a>
+      <a class="contact__number contact__link" href="tel:07586653620">07586653620</a>
+      <a class="contact__back contact__link" href="#top">Back To Top</a>
     </footer>
   </body>
 </html>

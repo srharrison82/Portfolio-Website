@@ -12,7 +12,9 @@ body {
     background-color:#F0F3BD;
 }
 
-.navbar {
+/* Nav Section */
+
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,22 +22,22 @@ body {
     color: white;
 }
 
-.brand {
+.nav__brand {
     font-size: 24px;
     margin: 11px; /*Cannot work out where 4px are coming from, hence 11px instead of 13px*/
 }
 
-.navbar ul {
+.nav__ul {
     margin: 0;
     padding: 0;
     display: flex;
 }
 
-.navbar li {
+.nav__list {
     list-style: none;
 }
 
-.navbar li a {
+.nav__a {
     text-decoration: none;
     padding: 0 15px;
     display: block;
@@ -43,17 +45,20 @@ body {
     color: white;
 }
 
-.navbar li a:hover {
+.nav__list:hover {
     background-color: #F0F3BD;
-    color: #00A896;
 }
 
-.navbar li a.current {
+.nav__a:hover {
+    color:#00A896;
+}
+
+.nav__current {
     background-color: white;
     color: #00A896;
 }
 
-.toggle-button {
+.nav__toggle-btn {
     position: absolute;
     top: 12.5px;
     right: 16px;
@@ -64,7 +69,7 @@ body {
     height: 25px;
 }
 
-.toggle-button .bar {
+.nav__bar {
     height: 3px;
     width: 100%;
     background-color: white;
@@ -72,56 +77,60 @@ body {
 }
 
 @media (max-width: 450px) {
-    .toggle-button {
+    .nav__toggle-btn {
         display: flex;
     }
-    .links {
+    .nav__links {
         display: none;
         width: 100%;
     }
-    .navbar {
+    .nav {
         flex-direction: column;
         align-items: flex-start;
     }
-    .links ul {
+    .nav__ul {
         flex-direction: column;
         width: 100%;
         background-color: #00A896;
     }
-    .links li {
+    .nav__list {
         text-align: center;
     }
-    .links li a {
+    .nav__a {
         line-height: 30px;
     }
-    .links.active {
+    .nav__links.active {
         display: flex;
     }
 }
 
-#about-background {
+/* Heading Section */ 
+
+.heading {
     background-image: url(../Images/about-heading-background.png);
     background-size: cover;
     background-position:left;
 }
 
-#img-about-me {
+.heading__container {
     padding: 40px 10%;
     position: relative;
 }
 
-header img,
-header h1 {
+.heading__img,
+.heading__title {
     display:inline-block;
     vertical-align:middle;
 }
 
-header img {
+.heading__img {
+    width: 30%;
+    height: 30%;
     border-radius: 20px;
     box-shadow: 6px 8px 16px 6px rgba(0, 0, 0, 0.20), 6px 12px 40px 6px rgba(0, 0, 0, 0.19);
 }
 
-header h1 {
+.heading__title {
     font-size: 6vw;
     overflow-wrap:normal;
     color: aliceblue;
@@ -131,21 +140,25 @@ header h1 {
     top:50%;
 }
 
-#img2 {
+.heading__img-right {
     float: right;
 }
 
-#about-me-background {
+/* About-me Section */ 
+
+.about-me {
     background:
     radial-gradient(circle at 100% 50%, transparent 20%, #F0F3BD 21%, #F0F3BD 34%, transparent 35%, transparent),
     radial-gradient(circle at 0% 50%, transparent 20%, #F0F3BD 21%, #F0F3BD 34%, transparent 35%, transparent) 0 -50px;
     background-color: #81c3c9;
     background-size:75px 100px;
+    padding: 20px 0;
+    margin-bottom: 20px;
 }
 
-#about-me p,
-#about-me h3,
-#about-me ul {
+.about-me__text,
+.about-me__h3,
+.about-me__ul {
     padding: 20px;
     margin: 20px 10%;
     background-color: #028090;
@@ -154,63 +167,54 @@ header h1 {
     box-shadow: 5px 5px darkslategray;
 }
 
-#about-me h3 {
+.about-me__h3 {
     border-width: 5px;
     border-color: aliceblue;
     border-style: solid;
 }
 
-#about-me {
-    padding: 20px 0;
-    margin-bottom: 20px;
-}
-
-#lake {
+.lake {
     width: 100%;
     height: auto;
     margin-bottom: 15px;
 }
 
-footer {
+/* Contact-details Section */
+
+.contact {
     background-color:#00A896;
-    color:aliceblue;
+    color:white;
 }
 
-footer a {
+.contact__link {
     text-align: center;
     height: 50px;
     line-height: 50px;
-    color: aliceblue;
+    color: white;
     padding: 0 15px;
 }
 
-#back {
+.contact__back {
     float: right;
     background-color: white;
     color: #00A896;
     text-decoration: none;
 }
 
-footer p {
-    display:inline-block;
-    height: 50px;
-    line-height: 50px;
-}
-
-#email:hover {
-    text-decoration: underline;
-}
-
-#back:hover {
+.contact__back:hover {
     background-color:#F0F3BD;
     color: #00A896;
 }
 
+.contact__email:hover {
+    text-decoration: underline;
+}
+
 @media only screen and (max-width: 480px) {
-    footer {
+    .contact {
         font-size: 10px;
     }
-    footer a {
+    .contact__link {
         padding: 0 5px;
     }
 }
