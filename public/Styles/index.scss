@@ -19,12 +19,12 @@ body {
     background-color: $primary-home-color;
 }
 
-@import "./nav-styles/nav";
+@import "./nav";
 
-@import "./home-heading/home-heading";
+@import "./home-heading";
 
-@import "./home-info/home-info";
+@import "./home-info";
 
-@import "./home-projects/home-projects";
+@import "./home-projects";
 
-@import "./contact-details/contact-details";
+@import "./contact-details";
