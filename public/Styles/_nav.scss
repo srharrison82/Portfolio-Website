@@ -1,0 +1,86 @@
+/* Nav Section */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $nav-footer-color;
+    color: $third-color;
+}
+
+.nav__brand {
+    font-size: 24px;
+    margin: 11px; /*Cannot work out where 4px are coming from, hence 11px instead of 13px*/
+}
+
+.nav__ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav__list {
+    list-style: none;
+}
+
+.nav__a {
+    text-decoration: none;
+    padding: 0 15px;
+    display: block;
+    line-height: 50px;
+    color: $third-color;
+}
+
+// .nav__list:hover {
+//     background-color: $primary-home-color;
+// }
+
+.nav__current {
+    background-color: $third-color;
+    color: $nav-footer-color;
+}
+
+.nav__toggle-btn {
+    position: absolute;
+    top: 12.5px;
+    right: 16px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 32px;
+    height: 25px;
+}
+
+.nav__bar {
+    height: 3px;
+    width: 100%;
+    background-color: $third-color;
+    border-radius: 10px;
+}
+
+@media (max-width: 450px) {
+    .nav__toggle-btn {
+        display: flex;
+    }
+    .nav__links {
+        display: none;
+        width: 100%;
+    }
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav__ul {
+        flex-direction: column;
+        width: 100%;
+        background-color: $nav-footer-color;
+    }
+    .nav__list {
+        text-align: center;
+    }
+    .nav__a {
+        line-height: 30px;
+    }
+    .nav__links.active {
+        display: flex;
+    }
+}

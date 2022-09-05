@@ -1,0 +1,39 @@
+/* Info Section */
+.info {
+    background-color: $third-color;
+    padding: 20px 0;
+}
+
+.info__right {
+    background-color: $secondary-home-color;
+    margin: 20px 0 20px 7%;
+    padding: 0 11% 0 4%;
+    border-radius: 20px 0 0 20px;
+    box-shadow: 5px 5px darkslategrey;
+}
+
+.info__left {
+    background-color: $secondary-home-color;
+    margin: 20px 7% 20px 0;
+    padding: 0 4% 0 11%;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 5px 5px darkslategrey;
+}
+
+.info__right-blue {
+    background-color: $secondary-home-color;
+    margin: 20px 0 20px 7%;
+    padding: 0 11% 0 4%;
+    border-radius: 20px 0 0 20px;
+    box-shadow: 5px 5px darkslategrey;
+    border-width: 5px 0 5px 5px;
+    border-color: #ADD8E6;
+    border-style: solid;
+}
+
+.info__text,
+.info__ul,
+.info__h3 {
+    padding: 20px 0;
+    color: $third-color;
+}

@@ -1,0 +1,39 @@
+$primary-fonts: "Trebuchet MS", Arial, Helvetica, sans-serif;
+$font-size: 15px;
+$primary-home-color: #028090;
+$secondary-home-color: #02C39A;
+$third-color: white;
+$nav-footer-color: #00A896;
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body { 
+    float: none !important;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 15px; 
+    background-color:#81c3c9;
+}
+
+.nav__list:hover {
+    background-color: #81c3c9;
+}
+
+@import "./nav";
+
+@import "./projects-presentation";
+
+@import "./projects-heading";
+
+@import "./projects-projects";
+
+@import "./contact-details";

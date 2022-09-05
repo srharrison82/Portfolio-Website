@@ -1,0 +1,32 @@
+$primary-fonts: "Trebuchet MS", Arial, Helvetica, sans-serif;
+$font-size: 15px;
+$primary-home-color: #028090;
+$secondary-home-color: #02C39A;
+$third-color: white;
+$nav-footer-color: #00A896;
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+body { 
+    float: none !important;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 15px; 
+    background-color:#F0F3BD;
+}
+
+.nav__list:hover {
+    background-color: #81c3c9;
+}
+
+@import "./nav";
+
+@import "./about-heading";
+
+@import "./about-info";
+
+@import "./contact-details";
