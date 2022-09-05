@@ -14,21 +14,19 @@ $nav-footer-color: #00A896;
 
 body { 
     float: none !important;
-    font-family: $primary-fonts;
-    font-size: $font-size; 
-    background-color: $primary-home-color;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 15px; 
+    background-color:#F0F3BD;
 }
 
 .nav__list:hover {
-    background-color: $primary-home-color;
+    background-color: #81c3c9;
 }
 
 @import "./nav";
 
-@import "./home-heading";
+@import "./about-heading";
 
-@import "./home-info";
-
-@import "./home-projects";
+@import "./about-info";
 
 @import "./contact-details";

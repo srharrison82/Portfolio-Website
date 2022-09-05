@@ -12,23 +12,28 @@ $nav-footer-color: #00A896;
     margin: 0;
 }
 
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body { 
     float: none !important;
-    font-family: $primary-fonts;
-    font-size: $font-size; 
-    background-color: $primary-home-color;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 15px; 
+    background-color:#81c3c9;
 }
 
 .nav__list:hover {
-    background-color: $primary-home-color;
+    background-color: #81c3c9;
 }
 
 @import "./nav";
 
-@import "./home-heading";
+@import "./projects-presentation";
 
-@import "./home-info";
+@import "./projects-heading";
 
-@import "./home-projects";
+@import "./projects-projects";
 
 @import "./contact-details";

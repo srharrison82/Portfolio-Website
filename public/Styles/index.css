@@ -12,6 +12,10 @@ body {
   background-color: #028090;
 }
 
+.nav__list:hover {
+  background-color: #028090;
+}
+
 /* Nav Section */
 .nav {
   display: flex;
@@ -42,10 +46,6 @@ body {
   display: block;
   line-height: 50px;
   color: white;
-}
-
-.nav__list:hover {
-  background-color: #028090;
 }
 
 .nav__current {

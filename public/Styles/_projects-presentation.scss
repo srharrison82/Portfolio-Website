@@ -1,0 +1,82 @@
+/* Image-presentation Section */
+
+.images {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    height: 440px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.images__background {
+    background-color: #028090;
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.images__nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 6px 8px 16px 6px rgba(0, 0, 0, 0.20), 6px 12px 40px 6px rgba(0, 0, 0, 0.19);
+    z-index: 1;
+    height: 250px;
+}
+
+.images__to-do {
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    box-shadow: 5px 5px darkslategrey;
+    height: 200px;
+}
+
+.images__counter {
+    position: absolute;
+    top: 0;
+    right: 15%;
+    box-shadow: 5px 5px darkslategrey;
+    height: 200px;
+}
+
+.images__swapper {
+    position: absolute;
+    bottom: 0;
+    right: 15%;
+    box-shadow: 5px 5px darkslategrey;
+    height: 200px;
+}
+
+.images__switch {
+    position: absolute;
+    top: 0;
+    left: 15%;
+    box-shadow: 5px 5px darkslategrey;
+    height: 200px;
+}
+
+@media (max-width: 1180px) {
+    .images__to-do,
+    .images__counter,
+    .images__swapper,
+    .images__switch {
+        height: 18vw;
+    }
+    .images__nav {
+        height: 25vw;
+    }
+    .images {
+        height: 40vw;
+    }
+    .images__background {
+        height: 30vw;
+    }
+}
