@@ -13,7 +13,11 @@ body {
 }
 
 .nav__list:hover {
-  background-color: #028090;
+  background-color: #81c3c9;
+}
+
+.nav__a:hover {
+  color: white;
 }
 
 /* Nav Section */
@@ -21,8 +25,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #00A896;
-  color: white;
+  background-color: white;
+  color: #028090;
 }
 
 .nav__brand {
@@ -45,12 +49,12 @@ body {
   padding: 0 15px;
   display: block;
   line-height: 50px;
-  color: white;
+  color: #028090;
 }
 
 .nav__current {
-  background-color: white;
-  color: #00A896;
+  background-color: #028090;
+  color: white;
 }
 
 .nav__toggle-btn {
@@ -67,7 +71,7 @@ body {
 .nav__bar {
   height: 3px;
   width: 100%;
-  background-color: white;
+  background-color: #028090;
   border-radius: 10px;
 }
 
@@ -86,7 +90,7 @@ body {
   .nav__ul {
     flex-direction: column;
     width: 100%;
-    background-color: #00A896;
+    background-color: #028090;
   }
   .nav__list {
     text-align: center;
@@ -217,22 +221,22 @@ body {
 
 /* Contact-details Section */
 .contact {
-  background-color: #00A896;
-  color: white;
+  background-color: white;
+  color: #028090;
 }
 
 .contact__link {
   text-align: center;
   height: 50px;
   line-height: 50px;
-  color: white;
+  color: #028090;
   padding: 0 15px;
 }
 
 .contact__back {
   float: right;
   background-color: white;
-  color: #00A896;
+  color: #028090;
   text-decoration: none;
 }
 
