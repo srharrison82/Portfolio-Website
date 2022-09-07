@@ -1,21 +1,21 @@
 /* Contact-details Section */
 .contact {
     background-color: $nav-footer-color;
-    color: $third-color;
+    color: $primary-home-color;
 }
 
 .contact__link {
     text-align: center;
     height: 50px;
     line-height: 50px;
-    color: $third-color;
+    color: $primary-home-color;
     padding: 0 15px;
 }
 
 .contact__back {
     float: right;
     background-color: $third-color;
-    color: $nav-footer-color;
+    color: $primary-home-color;
     text-decoration: none;
 }
 
