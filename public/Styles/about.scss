@@ -3,7 +3,7 @@ $font-size: 15px;
 $primary-home-color: #028090;
 $secondary-home-color: #02C39A;
 $third-color: white;
-$nav-footer-color: #00A896;
+$nav-footer-color: white;
 
 * {
     box-sizing: border-box;
@@ -16,11 +16,15 @@ body {
     float: none !important;
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     font-size: 15px; 
-    background-color:#F0F3BD;
+    background-color: $primary-home-color;
 }
 
 .nav__list:hover {
     background-color: #81c3c9;
+}
+
+.nav__a:hover {
+    color: $third-color;
 }
 
 @import "./nav";

@@ -1,5 +1,10 @@
 /* Image-presentation Section */
 
+.images__container {
+    padding: 40px 0;
+    background-color: #028090;
+}
+
 .images {
     display: block;
     margin-left: auto;
@@ -7,18 +12,18 @@
     position: relative;
     height: 440px;
     width: 100%;
-    margin-top: 40px;
+    background-color: #028090;
 }
 
 .images__background {
-    background-color: #028090;
+    background-color: #81c3c9;
     height: 300px;
     width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: -1;
+    z-index: 1;
 }
 
 .images__nav {
@@ -27,7 +32,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 6px 8px 16px 6px rgba(0, 0, 0, 0.20), 6px 12px 40px 6px rgba(0, 0, 0, 0.19);
-    z-index: 1;
+    z-index: 3;
     height: 250px;
 }
 
@@ -37,6 +42,7 @@
     left: 15%;
     box-shadow: 5px 5px darkslategrey;
     height: 200px;
+    z-index: 2;
 }
 
 .images__counter {
@@ -45,6 +51,7 @@
     right: 15%;
     box-shadow: 5px 5px darkslategrey;
     height: 200px;
+    z-index: 2;
 }
 
 .images__swapper {
@@ -53,6 +60,7 @@
     right: 15%;
     box-shadow: 5px 5px darkslategrey;
     height: 200px;
+    z-index: 2;
 }
 
 .images__switch {
@@ -61,6 +69,7 @@
     left: 15%;
     box-shadow: 5px 5px darkslategrey;
     height: 200px;
+    z-index: 2;
 }
 
 @media (max-width: 1180px) {
