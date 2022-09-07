@@ -90,7 +90,7 @@ body {
   .nav__ul {
     flex-direction: column;
     width: 100%;
-    background-color: #028090;
+    background-color: white;
   }
   .nav__list {
     text-align: center;
@@ -241,7 +241,7 @@ body {
 }
 
 .contact__back:hover {
-  background-color: #028090;
+  background-color: #81c3c9;
   color: white;
 }
 
