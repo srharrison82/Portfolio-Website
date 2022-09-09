@@ -34,6 +34,7 @@
     box-shadow: 6px 8px 16px 6px rgba(0, 0, 0, 0.20), 6px 12px 40px 6px rgba(0, 0, 0, 0.19);
     z-index: 3;
     height: 250px;
+    border-radius: 20px;
 }
 
 .images__to-do {
@@ -43,6 +44,7 @@
     box-shadow: 5px 5px darkslategrey;
     height: 200px;
     z-index: 2;
+    border-radius: 20px;
 }
 
 .images__counter {
@@ -52,6 +54,7 @@
     box-shadow: 5px 5px darkslategrey;
     height: 200px;
     z-index: 2;
+    border-radius: 20px;
 }
 
 .images__swapper {
@@ -61,6 +64,7 @@
     box-shadow: 5px 5px darkslategrey;
     height: 200px;
     z-index: 2;
+    border-radius: 20px;
 }
 
 .images__switch {
@@ -70,6 +74,7 @@
     box-shadow: 5px 5px darkslategrey;
     height: 200px;
     z-index: 2;
+    border-radius: 20px;
 }
 
 @media (max-width: 1180px) {
