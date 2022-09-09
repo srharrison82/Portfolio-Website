@@ -81,6 +81,7 @@
     border-color: white;
     border-style: solid;
     box-shadow: 5px 5px darkslategray;
+    margin-top: 20px;
 }
 
 @media only screen and (max-width: 510px) {
@@ -100,7 +101,7 @@
 }
 
 .projects__underline {
-    height: 20px;
+    height: 40px;
     width: 100%;
     background-color: #81c3c9;
 }
