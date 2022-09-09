@@ -1,21 +1,30 @@
 /* Heading Section */
 
 .heading {
-    background-color: #02C39A;
-    width: 100%;
-    height: 120px;
+    background-image: url(../Images/about-heading-background.png);
+    background-size: cover;
+    background-position:left;
 }
 
 .heading__title {
     text-align: center;
-    font-size: 90px;
+    font-size: 6vw;
     color: white;
     vertical-align: middle;
-    line-height: 120px; 
 }
 
 .heading-below {
     background-color: #028090;
     width: 100%;
     height: 40px;
+}
+
+@media (max-width: 600px) {
+    .heading {
+        background-image: url(../Images/projects-heading-background.png);
+    }
+
+    .heading__title {
+        font-size: 10vw;
+    }
 }

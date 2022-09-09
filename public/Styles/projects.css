@@ -142,6 +142,7 @@ body {
   box-shadow: 6px 8px 16px 6px rgba(0, 0, 0, 0.2), 6px 12px 40px 6px rgba(0, 0, 0, 0.19);
   z-index: 3;
   height: 250px;
+  border-radius: 20px;
 }
 
 .images__to-do {
@@ -151,6 +152,7 @@ body {
   box-shadow: 5px 5px darkslategrey;
   height: 200px;
   z-index: 2;
+  border-radius: 20px;
 }
 
 .images__counter {
@@ -160,6 +162,7 @@ body {
   box-shadow: 5px 5px darkslategrey;
   height: 200px;
   z-index: 2;
+  border-radius: 20px;
 }
 
 .images__swapper {
@@ -169,6 +172,7 @@ body {
   box-shadow: 5px 5px darkslategrey;
   height: 200px;
   z-index: 2;
+  border-radius: 20px;
 }
 
 .images__switch {
@@ -178,6 +182,7 @@ body {
   box-shadow: 5px 5px darkslategrey;
   height: 200px;
   z-index: 2;
+  border-radius: 20px;
 }
 
 @media (max-width: 1180px) {
@@ -199,17 +204,16 @@ body {
 }
 /* Heading Section */
 .heading {
-  background-color: #02C39A;
-  width: 100%;
-  height: 120px;
+  background-image: url(../Images/about-heading-background.png);
+  background-size: cover;
+  background-position: left;
 }
 
 .heading__title {
   text-align: center;
-  font-size: 90px;
+  font-size: 6vw;
   color: white;
   vertical-align: middle;
-  line-height: 120px;
 }
 
 .heading-below {
@@ -218,6 +222,14 @@ body {
   height: 40px;
 }
 
+@media (max-width: 600px) {
+  .heading {
+    background-image: url(../Images/projects-heading-background.png);
+  }
+  .heading__title {
+    font-size: 10vw;
+  }
+}
 /* Projects Section */
 .projects {
   margin: 40px 5%;
