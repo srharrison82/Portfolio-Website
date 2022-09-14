@@ -5,26 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./colourSwitch.css" />
+    <script src="https://kit.fontawesome.com/d07ba3d4f2.js" crossorigin="anonymous"></script>
     <title>Colour Switch</title>
   </head>
 
   <body id="top">
     <header>
-      <nav class="navbar">
-        <div class="brand">Colour Switch</div>
+      <nav class="nav">
+        <div class="nav__brand">Samuel Harrison</div>
 
-        <a href="#" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+        <a href="#" class="nav__toggle-btn">
+          <span class="nav__bar"></span>
+          <span class="nav__bar"></span>
+          <span class="nav__bar"></span>
         </a>
 
-        <div class="links">
-            <ul>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="../../About/about.html">About</a></li>
-                <li><a href="../projects.html">Projects</a></li>
-            </ul>
+        <div class="nav__links">
+          <ul class="nav__ul">
+            <li class="nav__list"><a class="nav__a nav__current" href="#">Colour Switch</a></li>
+            <li class="nav__list"><a class="nav__a nav__home" href="../../index.html">Home</a></li>
+            <li class="nav__list"><a class="nav__a nav__about" href="../../About/about.html">About</a></li>
+            <li class="nav__list"><a class="nav__a nav__projects" href="../projects.html">Projects</a></li>
+          </ul>
         </div>
       </nav>
     </header>
@@ -48,11 +50,8 @@
       <script type="text/javascript" src="./colourSwitch.js"></script>
     </main>
 
-    <footer>
-      <ul>
-        <li><a href="mailto:srharrison82@gmail.com?subject=subject text" id="email">srharrison82@gmail.com</a></li>
-        <li><a id="number" href="tel:07586653620">07586653620</a></li>
-      </ul>
+    <footer class="contact">
+      <a class="contact__email contact__link" href="mailto:srharrison82@gmail.com?subject=subject text"><i class="fa-regular fa-envelope fa-2x"></i></a>
     </footer>
   </body>
 </html>
