@@ -337,38 +337,21 @@ body {
 /* Contact-details Section */
 .contact {
   background-color: white;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.fa-2x {
+  margin: 10px 0;
   color: #028090;
+}
+
+.fa-2x:hover {
+  color: #81c3c9;
 }
 
 .contact__link {
-  text-align: center;
-  height: 50px;
-  line-height: 50px;
-  color: #028090;
-  padding: 0 15px;
-}
-
-.contact__back {
-  float: right;
-  background-color: white;
-  color: #028090;
-  text-decoration: none;
-}
-
-.contact__back:hover {
-  background-color: #81c3c9;
-  color: white;
-}
-
-.contact__email:hover {
-  text-decoration: underline;
-}
-
-@media only screen and (max-width: 480px) {
-  .contact {
-    font-size: 10px;
-  }
-  .contact__link {
-    padding: 0 5px;
-  }
+  margin: 0 20px;
 }/*# sourceMappingURL=projects.css.map */
