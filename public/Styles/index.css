@@ -110,7 +110,7 @@ body {
 }
 
 .heading__container {
-  padding: 40px 10%;
+  padding: 40px 15%;
 }
 
 .heading__img-wrapper,
@@ -135,7 +135,7 @@ body {
   padding-left: 5%;
   font-size: 6vw;
   overflow-wrap: normal;
-  width: 60%;
+  width: 50%;
   height: 50%;
   color: white;
 }
