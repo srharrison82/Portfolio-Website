@@ -192,6 +192,18 @@ body {
   color: white;
 }
 
+.info__ul {
+  font-style: italic;
+  padding-left: 15px;
+}
+
+.info__responsibilities {
+  color: white;
+  padding-bottom: 20px;
+  font-style: italic;
+  padding-left: 15px;
+}
+
 /* Flex-projects Section */
 .flex-projects {
   display: flex;
