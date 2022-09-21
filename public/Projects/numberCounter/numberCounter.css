@@ -183,6 +183,22 @@ body {
     }
 }
 
+@media screen and (orientation:landscape) and (max-height: 400px) {
+    .container {
+        height: 150px;
+    }
+    .button-container {
+        padding: 0;
+        width: 300px;
+    }
+    #value {
+        font-size: 50px;
+    }
+    .btn {
+        font-size: 16px;
+    }
+}
+
 /* Contact-details Section */
 .contact {
     background-color: cadetblue;
